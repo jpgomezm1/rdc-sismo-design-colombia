@@ -1,4 +1,6 @@
+// src/components/Header.tsx actualizado
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, ChevronDown, Globe } from 'lucide-react';
@@ -26,10 +28,9 @@ const Header: React.FC = () => {
   }, []);
 
   const services = [
-    { name: 'Ingeniería Sísmica', href: '#sismica' },
-    { name: 'Geotecnia y Geociencias', href: '#geotecnia' },
-    { name: 'Consultoría en Riesgos', href: '#riesgos' },
-    { name: 'Modelación BIM', href: '#bim' }
+    { name: 'Ingeniería Estructural', href: '/servicios/ingenieria-estructural' },
+    { name: 'Geociencias', href: '/servicios/geociencias' },
+    { name: 'Computación', href: '/servicios/computacion' }
   ];
 
   return (
@@ -44,32 +45,33 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img
-              src="https://storage.googleapis.com/cluvi/Web-Risk/logo_RDC.png"
-              alt="R&DC Logo"
-              className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-12'}`}
-            />
-
+            <Link to="/">
+              <img
+                src="https://storage.googleapis.com/cluvi/Web-Risk/logo_RDC.png"
+                alt="R&DC Logo"
+                className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-12'}`}
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a
-              href="#inicio"
+            <Link
+              to="/"
               className={`hover:text-[#961A1D] transition-colors duration-300 ${
                 isScrolled ? 'text-[#2C3336]' : 'text-white'
               }`}
             >
               Inicio
-            </a>
-            <a
-              href="#nosotros"
+            </Link>
+            <Link
+              to="/nosotros"
               className={`hover:text-[#961A1D] transition-colors duration-300 ${
                 isScrolled ? 'text-[#2C3336]' : 'text-white'
               }`}
             >
               Nosotros
-            </a>
+            </Link>
 
             {/* Services Dropdown */}
             <div
@@ -94,47 +96,57 @@ const Header: React.FC = () => {
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md shadow-xl rounded-md border border-gray-100 py-1 overflow-hidden">
                   <div className="h-0.5 bg-gradient-to-r from-[#961A1D] to-[#961A1D]/20 w-full"></div>
                   {services.map((service) => (
-                    <a
+                    <Link
                       key={service.name}
-                      href={service.href}
+                      to={service.href}
                       className="block px-4 py-3 text-[#2C3336] hover:text-[#961A1D] hover:bg-gray-50 transition-colors duration-200"
                     >
                       {service.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
             </div>
 
-            <a
-              href="#proyectos"
+            <Link
+              to="/proyectos"
               className={`hover:text-[#961A1D] transition-colors duration-300 ${
                 isScrolled ? 'text-[#2C3336]' : 'text-white'
               }`}
             >
               Proyectos
-            </a>
-            <a
-              href="#blog"
+            </Link>
+            <Link
+              to="/blog"
               className={`hover:text-[#961A1D] transition-colors duration-300 ${
                 isScrolled ? 'text-[#2C3336]' : 'text-white'
               }`}
             >
               Blog
-            </a>
+            </Link>
+            <Link
+              to="/contacto"
+              className={`hover:text-[#961A1D] transition-colors duration-300 ${
+                isScrolled ? 'text-[#2C3336]' : 'text-white'
+              }`}
+            >
+              Contacto
+            </Link>
           </nav>
 
           {/* Right Side: Language & CTA */}
           <div className="flex items-center space-x-4">
 
             {/* CTA Button */}
-            <Button
-              className={`hidden md:flex bg-[#961A1D] hover:bg-[#961A1D]/90 text-white px-5 py-2 text-sm font-medium rounded-none transition-all duration-300 ${
-                isScrolled ? 'shadow-none' : 'shadow-lg shadow-[#961A1D]/20'
-              }`}
-            >
-              Consulta Gratuita
-            </Button>
+            <Link to="/contacto">
+              <Button
+                className={`hidden md:flex bg-[#961A1D] hover:bg-[#961A1D]/90 text-white px-5 py-2 text-sm font-medium rounded-none transition-all duration-300 ${
+                  isScrolled ? 'shadow-none' : 'shadow-lg shadow-[#961A1D]/20'
+                }`}
+              >
+                Consulta Gratuita
+              </Button>
+            </Link>
 
             {/* Mobile Menu */}
             <Sheet>
@@ -155,40 +167,45 @@ const Header: React.FC = () => {
                 <div className="h-1 bg-[#961A1D] w-full"></div>
                 <div className="p-6">
                   <div className="flex justify-center mb-8">
-                    <img
-                      src="https://storage.googleapis.com/cluvi/Web-Risk/logo_RDC.png"
-                      alt="R&DC Logo"
-                      className="h-12"
-                    />
+                    <Link to="/">
+                      <img
+                        src="https://storage.googleapis.com/cluvi/Web-Risk/logo_RDC.png"
+                        alt="R&DC Logo"
+                        className="h-12"
+                      />
+                    </Link>
                   </div>
 
                   <div className="flex flex-col space-y-6">
-                    <a href="#inicio" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
+                    <Link to="/" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
                       Inicio
-                    </a>
-                    <a href="#nosotros" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
+                    </Link>
+                    <Link to="/nosotros" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
                       Nosotros
-                    </a>
+                    </Link>
 
                     <div className="space-y-3">
                       <div className="text-lg text-[#2C3336] font-medium">Servicios</div>
                       {services.map((service) => (
-                        <a
+                        <Link
                           key={service.name}
-                          href={service.href}
+                          to={service.href}
                           className="block pl-4 text-[#64748B] hover:text-[#961A1D] transition-colors"
                         >
                           {service.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
 
-                    <a href="#proyectos" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
+                    <Link to="/proyectos" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
                       Proyectos
-                    </a>
-                    <a href="#blog" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
+                    </Link>
+                    <Link to="/blog" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
                       Blog
-                    </a>
+                    </Link>
+                    <Link to="/contacto" className="text-lg text-[#2C3336] hover:text-[#961A1D] transition-colors">
+                      Contacto
+                    </Link>
 
                     <div className="pt-4 mt-4 border-t border-gray-100">
                       <div className="flex items-center justify-between mb-4">
@@ -199,9 +216,11 @@ const Header: React.FC = () => {
                         </div>
                       </div>
 
-                      <Button className="bg-[#961A1D] hover:bg-[#961A1D]/90 text-white w-full py-6 rounded-none">
-                        Consulta Gratuita
-                      </Button>
+                      <Link to="/contacto">
+                        <Button className="bg-[#961A1D] hover:bg-[#961A1D]/90 text-white w-full py-6 rounded-none">
+                          Consulta Gratuita
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>
