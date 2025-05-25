@@ -1,5 +1,5 @@
-// src/components/Header.tsx actualizado
-import React, { useState, useEffect } from 'react';
+// src/components/Header.tsx
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -9,12 +9,22 @@ const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [showServicesMenu, setShowServicesMenu] = useState<boolean>(false);
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
+  const servicesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+    
+    // Añadir un manejador de clics global para cerrar el menú cuando se hace clic fuera
+    const handleClickOutside = (event: MouseEvent) => {
+      if (servicesRef.current && !servicesRef.current.contains(event.target as Node)) {
+        setShowServicesMenu(false);
+      }
+    };
+    
     window.addEventListener('scroll', handleScroll);
+    document.addEventListener('mousedown', handleClickOutside);
 
     // Efecto de carga para la animación inicial
     const timer = setTimeout(() => {
@@ -23,6 +33,7 @@ const Header: React.FC = () => {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('mousedown', handleClickOutside);
       clearTimeout(timer);
     };
   }, []);
@@ -32,6 +43,11 @@ const Header: React.FC = () => {
     { name: 'Geociencias', href: '/servicios/geociencias' },
     { name: 'Computación', href: '/servicios/computacion' }
   ];
+
+  // Función para manejar clics en el botón de servicios
+  const toggleServicesMenu = () => {
+    setShowServicesMenu(!showServicesMenu);
+  };
 
   return (
     <header
@@ -73,16 +89,16 @@ const Header: React.FC = () => {
               Nosotros
             </Link>
 
-            {/* Services Dropdown */}
+            {/* Services Dropdown - SOLUCIÓN MEJORADA */}
             <div
+              ref={servicesRef}
               className="relative"
-              onMouseEnter={() => setShowServicesMenu(true)}
-              onMouseLeave={() => setShowServicesMenu(false)}
             >
               <button
+                onClick={toggleServicesMenu}
                 className={`flex items-center hover:text-[#961A1D] transition-colors duration-300 ${
                   isScrolled ? 'text-[#2C3336]' : 'text-white'
-                }`}
+                } ${showServicesMenu ? 'text-[#961A1D]' : ''}`}
               >
                 Servicios
                 <ChevronDown
@@ -92,18 +108,22 @@ const Header: React.FC = () => {
                 />
               </button>
 
+              {/* Dropdown Menu - Con visibilidad permanente mientras está abierto */}
               {showServicesMenu && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md shadow-xl rounded-md border border-gray-100 py-1 overflow-hidden">
-                  <div className="h-0.5 bg-gradient-to-r from-[#961A1D] to-[#961A1D]/20 w-full"></div>
-                  {services.map((service) => (
-                    <Link
-                      key={service.name}
-                      to={service.href}
-                      className="block px-4 py-3 text-[#2C3336] hover:text-[#961A1D] hover:bg-gray-50 transition-colors duration-200"
-                    >
-                      {service.name}
-                    </Link>
-                  ))}
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden z-50">
+                  <div className="h-1 bg-gradient-to-r from-[#961A1D] to-[#961A1D]/20 w-full"></div>
+                  <div className="py-2">
+                    {services.map((service) => (
+                      <Link
+                        key={service.name}
+                        to={service.href}
+                        className="block px-4 py-3 text-[#2C3336] hover:bg-gray-50 hover:text-[#961A1D] transition-colors duration-200 border-l-2 border-transparent hover:border-[#961A1D]"
+                        onClick={() => setShowServicesMenu(false)}
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
@@ -136,7 +156,6 @@ const Header: React.FC = () => {
 
           {/* Right Side: Language & CTA */}
           <div className="flex items-center space-x-4">
-
             {/* CTA Button */}
             <Link to="/contacto">
               <Button
