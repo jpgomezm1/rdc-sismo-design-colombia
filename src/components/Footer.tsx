@@ -19,7 +19,7 @@ const Footer = () => {
             
             <p className="text-white/70 mb-6 max-w-md leading-relaxed text-sm">
               Consultora líder en ingeniería sísmica, geotecnia y evaluación de riesgos 
-              naturales en Colombia y Panamá. 25 años protegiendo vidas y patrimonio 
+              naturales en Colombia y Panamá. 11 años protegiendo vidas y patrimonio 
               con soluciones innovadoras.
             </p>
             
@@ -78,7 +78,7 @@ const Footer = () => {
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-[#961A1D] flex-shrink-0" />
                 <a href="tel:+5716123456" className="text-white/70 hover:text-white transition-colors ml-3 text-sm">
-                  +57 (318) 335-1733
+                  +57 (318) 335-1722
                 </a>
               </div>
               

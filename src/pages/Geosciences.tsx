@@ -64,7 +64,7 @@ const Geosciences = () => {
     {
       title: "Microzonificación Sísmica: Ciudad de Panamá",
       location: "Ciudad de Panamá, Panamá",
-      image: "https://images.unsplash.com/photo-1502810217690-b2aa88e35100?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      image: "https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/geo1.png",
       description: "Extenso estudio para evaluar la respuesta sísmica del suelo en diferentes zonas de la ciudad, proporcionando insumos para los códigos de construcción locales.",
       highlights: [
         "24 estaciones de monitoreo instaladas",
@@ -77,7 +77,7 @@ const Geosciences = () => {
     {
       title: "Estabilización de Taludes: Autopista Medellín-Bogotá",
       location: "Antioquia, Colombia",
-      image: "https://images.unsplash.com/photo-1510797215324-95aa89f43c33?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      image: "https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/geo2.png",
       description: "Análisis y diseño de soluciones para estabilizar taludes en zonas críticas de esta importante vía, previniendo deslizamientos en áreas montañosas con fuertes lluvias.",
       highlights: [
         "15 km de taludes analizados",
@@ -90,7 +90,7 @@ const Geosciences = () => {
     {
       title: "Evaluación de Licuefacción: Terminal Portuaria",
       location: "Buenaventura, Colombia",
-      image: "https://images.unsplash.com/photo-1504433374832-4fcf45f40967?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      image: "https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/geo3.png",
       description: "Estudio del potencial de licuefacción en suelos granulares saturados para el diseño de una nueva terminal portuaria, incluyendo recomendaciones para mitigar riesgos.",
       highlights: [
         "Ensayos CPT y SPT especializados",
@@ -108,33 +108,33 @@ const Geosciences = () => {
       icon: Mountain,
       title: "Caracterización Geotécnica",
       color: "#1F4E5F",
-      description: "Investigación exhaustiva del suelo para determinar sus propiedades físicas y mecánicas relevantes para el diseño estructural.",
+      description: "Evaluamos los riesgos y contingencias presupuestales antes de comprar el lote mediante una evaluación preliminar de las propiedades físicas y mecánicas del suelo evitando sorpresas en cimentaciones, contenciones o movimientos de tierra.",
       features: [
+        "Investigación exhaustiva del suelo para determinar sus propiedades físicas y mecánicas",
         "Análisis granulométrico y mineralógico",
         "Determinación de límites de Atterberg",
         "Pruebas de resistencia al corte",
-        "Ensayos de consolidación",
-        "Análisis de permeabilidad"
+        "Ensayos de consolidación y permeabilidad"
       ]
     },
     {
       icon: Layers,
       title: "Microzonificación Sísmica",
-      color: "#1F4E5F",
-      description: "Identificación de zonas con comportamiento sísmico similar para optimizar el diseño estructural según el terreno.",
+      color: "#1F4E5F", 
+      description: "Dependiendo de la altura de su edificio, utilizamos modelos de propagación de onda considerando la topografía local y regional así como las propiedades mecánicas del suelo para definir el espectro de diseño particular del sitio.",
       features: [
         "Medición de vibraciones ambientales",
-        "Análisis de respuesta sísmica",
-        "Modelación de amplificación local",
-        "Mapeo de zonas homogéneas",
-        "Espectros de diseño específicos"
+        "Análisis de respuesta sísmica local",
+        "Modelación de amplificación sísmica",
+        "Mapeo de zonas con comportamiento sísmico similar",
+        "Espectros de diseño específicos del sitio"
       ]
     },
     {
       icon: GanttChart,
       title: "Estabilidad de Taludes",
       color: "#1F4E5F",
-      description: "Análisis y diseño de soluciones para garantizar la seguridad en terrenos con pendientes pronunciadas y condiciones geológicas complejas.",
+      description: "Nuestro énfasis en edificios sobre topografías agresivas nos ha permitido desarrollar capacidades para producir soluciones geotécnicas seguras y económicamente viables.",
       features: [
         "Análisis de equilibrio límite",
         "Modelación de elementos finitos",
@@ -215,8 +215,8 @@ const Geosciences = () => {
                 transition={{ duration: 0.8, delay: 0.7 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-white leading-tight mb-6"
               >
-                <span className="text-[#1F4E5F]">Geociencias</span> <br className="hidden md:block" />
-                para decisiones precisas
+                Geociencias aplicadas para <span className="text-[#1F4E5F]">decisiones</span> <br className="hidden md:block" />
+                estructurales inteligentes
               </motion.h1>
               
               <motion.p 
@@ -225,8 +225,8 @@ const Geosciences = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-xl text-white/80 mb-8 max-w-2xl"
               >
-                Analizamos las condiciones del suelo y subsuelo para fundamentar decisiones 
-                estructurales críticas, optimizando la interacción suelo-estructura en cada proyecto.
+                Integramos la caracterización del suelo al diseño estructural para evitar
+                sobrecostos y tomar decisiones seguras desde la etapa de factibilidad.
               </motion.p>
               
               <motion.div
@@ -257,8 +257,8 @@ const Geosciences = () => {
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-[#1F4E5F] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">100+</div>
-                    <div className="text-white/70 text-xs">Estudios geotécnicos anuales</div>
+                    <div className="text-white font-bold text-2xl">60+</div>
+                    <div className="text-white/70 text-xs">Proyectos acompañados</div>
                   </div>
                 </div>
               </motion.div>
@@ -272,8 +272,8 @@ const Geosciences = () => {
                 <div className="flex items-center">
                   <Globe className="h-5 w-5 text-[#1F4E5F] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">25+</div>
-                    <div className="text-white/70 text-xs">Años de experiencia</div>
+                    <div className="text-white font-bold text-2xl">600K</div>
+                    <div className="text-white/70 text-xs">m² caracterizados</div>
                   </div>
                 </div>
               </motion.div>
@@ -287,8 +287,8 @@ const Geosciences = () => {
                 <div className="flex items-center">
                   <Database className="h-5 w-5 text-[#1F4E5F] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">15k+</div>
-                    <div className="text-white/70 text-xs">Muestras analizadas</div>
+                    <div className="text-white font-bold text-2xl">2</div>
+                    <div className="text-white/70 text-xs">Países</div>
                   </div>
                 </div>
               </motion.div>
@@ -378,6 +378,37 @@ const Geosciences = () => {
                 ))}
               </motion.div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Nueva sección de indicadores */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-2xl font-bold text-[#2C3336] mb-8">
+                Nuestros <span className="text-[#1F4E5F]">indicadores</span>
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-[#1F4E5F] mb-2">60+</div>
+                  <div className="text-sm text-gray-600 mb-2">Proyectos</div>
+                  <div className="text-xs text-gray-500">Acompañamiento en más de 60 proyectos</div>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-[#1F4E5F] mb-2">600K</div>
+                  <div className="text-sm text-gray-600 mb-2">m² caracterizados</div>
+                  <div className="text-xs text-gray-500">de terreno caracterizado para decisiones confiables</div>
+                </div>
+                
+                <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-[#1F4E5F] mb-2">2</div>
+                  <div className="text-sm text-gray-600 mb-2">Países</div>
+                  <div className="text-xs text-gray-500">Soluciones en Colombia y Panamá</div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         
@@ -506,357 +537,10 @@ const Geosciences = () => {
         </section>
         
         {/* Enfoque Técnico */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <div className="inline-flex items-center justify-center mb-4">
-                <div className="h-px w-12 bg-[#961A1D]"></div>
-                <span className="px-4 text-sm uppercase tracking-wider text-gray-500 font-medium">Metodología</span>
-                <div className="h-px w-12 bg-[#961A1D]"></div>
-              </div>
-              
-              <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2C3336] leading-tight mb-6">
-                Nuestro Enfoque <span className="text-[#1F4E5F]">Técnico</span>
-              </h2>
-              
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Combinamos metodologías tradicionales con tecnologías avanzadas para obtener 
-                caracterizaciones precisas del terreno y análisis geotécnicos robustos.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              <div className="order-2 lg:order-1">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {[
-                    {
-                      icon: Ruler,
-                      title: "Técnicas de Exploración",
-                      features: [
-                        "Perforaciones con recuperación de núcleos",
-                        "Ensayos de penetración estándar (SPT)",
-                        "Ensayos de cono (CPT) y piezocono (CPTU)",
-                        "Ensayos geofísicos (MASW, ReMi, Down-hole)",
-                        "Monitoreo de vibraciones ambientales"
-                      ]
-                    },
-                    {
-                      icon: Database,
-                      title: "Análisis de Laboratorio",
-                      features: [
-                        "Caracterización física y mecánica",
-                        "Ensayos triaxiales estáticos y dinámicos",
-                        "Pruebas de consolidación avanzadas",
-                        "Análisis mineralógico y químico",
-                        "Pruebas de resistencia a largo plazo"
-                      ]
-                    },
-                    {
-                      icon: Map,
-                      title: "Modelación Computacional",
-                      features: [
-                        "Modelación 2D y 3D del subsuelo",
-                        "Análisis de elementos finitos",
-                        "Simulación de respuesta dinámica",
-                        "Modelos de interacción suelo-estructura",
-                        "Análisis probabilístico de riesgos"
-                      ]
-                    },
-                    {
-                      icon: AlertTriangle,
-                      title: "Gestión de Riesgos",
-                      features: [
-                        "Evaluación de amenazas geológicas",
-                        "Análisis de vulnerabilidad sísmica",
-                        "Planes de mitigación y contingencia",
-                        "Monitoreo instrumental continuo",
-                        "Sistemas de alerta temprana"
-                      ]
-                    }
-                  ].map((category, idx) => (
-                    <div key={idx} className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                      <div className="flex items-center mb-4">
-                        <div className="w-10 h-10 rounded-full bg-[#1F4E5F]/10 flex items-center justify-center mr-3">
-                        <category.icon className="h-5 w-5 text-[#1F4E5F]" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-[#2C3336]">{category.title}</h3>
-                      </div>
-                      
-                      <div className="space-y-2">
-                        {category.features.map((feature, featureIdx) => (
-                          <div key={featureIdx} className="flex items-start">
-                            <div className="w-2 h-2 bg-[#1F4E5F] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <p className="text-gray-700 text-sm">{feature}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="mt-10 text-center lg:text-left">
-                  <Button className="bg-[#1F4E5F] hover:bg-[#1F4E5F]/80 text-white transition-colors duration-300">
-                    <span className="flex items-center">
-                      Descargar folleto técnico
-                      <FileSpreadsheet className="ml-2 h-4 w-4" />
-                    </span>
-                  </Button>
-                </div>
-              </div>
-              
-              <div className="order-1 lg:order-2 relative">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-[#1F4E5F]/5 rounded-full blur-3xl"></div>
-                <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-[#1F4E5F]/5 rounded-full blur-3xl"></div>
-                
-                <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#1F4E5F] rounded-xl"></div>
-                  <img 
-                    src="https://storage.googleapis.com/cluvi/Web-Risk/geociencias.png" 
-                    alt="Estudio Geotécnico" 
-                    className="w-full h-full object-cover rounded-xl shadow-xl"
-                  />
-                  
-                  <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-xl">
-                    <div className="flex items-center">
-                      <div className="w-12 h-12 rounded-full bg-[#1F4E5F]/10 flex items-center justify-center mr-4">
-                        <Wand2 className="h-6 w-6 text-[#1F4E5F]" />
-                      </div>
-                      <div>
-                        <div className="text-[#1F4E5F] font-bold text-lg">Tecnología avanzada</div>
-                        <div className="text-xs text-gray-500">para resultados precisos</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
         
         {/* Aplicaciones y Beneficios */}
-        <section className="py-24 bg-gray-50">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <div className="inline-flex items-center justify-center mb-4">
-                <div className="h-px w-12 bg-[#961A1D]"></div>
-                <span className="px-4 text-sm uppercase tracking-wider text-gray-500 font-medium">Aplicaciones</span>
-                <div className="h-px w-12 bg-[#961A1D]"></div>
-              </div>
-              
-              <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2C3336] leading-tight mb-6">
-                Soluciones para <span className="text-[#1F4E5F]">múltiples</span> sectores
-              </h2>
-              
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Nuestros estudios geotécnicos y análisis de riesgos geológicos son 
-                fundamentales para una amplia gama de proyectos en diferentes industrias.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Edificación",
-                  description: "Estudios geotécnicos para edificios residenciales, comerciales e industriales que garantizan cimentaciones seguras y económicas.",
-                  image: "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  benefits: [
-                    "Reducción de costos de cimentación",
-                    "Prevención de asentamientos diferenciales",
-                    "Optimización de sistemas estructurales"
-                  ]
-                },
-                {
-                  title: "Infraestructura Vial",
-                  description: "Análisis de suelos para carreteras, puentes y túneles que aseguran la estabilidad de taludes y estructuras en todo tipo de terreno.",
-                  image: "https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  benefits: [
-                    "Estabilización de taludes",
-                    "Diseño optimizado de pavimentos",
-                    "Mitigación de riesgos geológicos"
-                  ]
-                },
-                {
-                  title: "Desarrollo Urbano",
-                  description: "Microzonificación sísmica y estudios de amenaza para la planificación urbana y normativas de construcción más seguras y eficientes.",
-                  image: "https://images.unsplash.com/photo-1518986756913-3c26c399cde9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  benefits: [
-                    "Normativas adaptadas a condiciones locales",
-                    "Reducción de vulnerabilidad sísmica",
-                    "Planificación urbana responsable"
-                  ]
-                },
-                {
-                  title: "Energía",
-                  description: "Caracterización geotécnica para infraestructura energética, incluyendo presas, centrales eléctricas y parques eólicos.",
-                  image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  benefits: [
-                    "Seguridad de infraestructura crítica",
-                    "Evaluación de riesgos específicos",
-                    "Cumplimiento normativo avanzado"
-                  ]
-                },
-                {
-                  title: "Minería",
-                  description: "Estudios de estabilidad de taludes, gestión de aguas subterráneas y análisis geotécnico para operaciones mineras seguras y sostenibles.",
-                  image: "https://images.unsplash.com/photo-1619542402915-dcaf30e4e2cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  benefits: [
-                    "Operaciones mineras más seguras",
-                    "Gestión de riesgos geológicos",
-                    "Optimización de excavaciones y tajos"
-                  ]
-                },
-                {
-                  title: "Proyectos Costeros",
-                  description: "Evaluación de riesgos de licuefacción, erosión costera y estudios geotécnicos especializados para puertos y estructuras marítimas.",
-                  image: "https://images.unsplash.com/photo-1566371486438-7402ef552946?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  benefits: [
-                    "Protección contra erosión costera",
-                    "Mitigación de riesgos de licuefacción",
-                    "Diseño adaptado a condiciones marinas"
-                  ]
-                }
-              ].map((sector, idx) => (
-                <div key={idx} className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src={sector.image} 
-                      alt={sector.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#2C3336] mb-3">{sector.title}</h3>
-                    <p className="text-gray-600 mb-4 text-sm">{sector.description}</p>
-                    
-                    <div className="space-y-2 mb-4">
-                      {sector.benefits.map((benefit, benefitIdx) => (
-                        <div key={benefitIdx} className="flex items-start">
-                          <CheckCircle2 className="h-4 w-4 text-[#1F4E5F] mr-2 flex-shrink-0 mt-0.5" />
-                          <p className="text-gray-700 text-sm">{benefit}</p>
-                        </div>
-                      ))}
-                    </div>
-                    
-                    <div className="pt-4 border-t border-gray-100">
-                      <a 
-                        href="#" 
-                        className="inline-flex items-center text-[#1F4E5F] hover:text-[#1F4E5F]/80 font-medium text-sm group-hover:translate-x-1 transition-transform duration-300"
-                      >
-                        Ver proyectos
-                        <ChevronRight className="ml-1 h-4 w-4" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
         
-        {/* Tecnología y Equipos */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="flex items-center mb-6">
-                  <div className="h-px w-12 bg-[#961A1D] mr-4"></div>
-                  <span className="text-sm uppercase tracking-wider text-gray-500 font-medium">Tecnología</span>
-                </div>
-                
-                <h2 className="text-3xl md:text-4xl font-bold text-[#2C3336] mb-6">
-                  Equipamiento <span className="text-[#1F4E5F]">avanzado</span>
-                </h2>
-                
-                <p className="text-gray-600 mb-8">
-                  Utilizamos equipos de última generación y software especializado para 
-                  garantizar la precisión y confiabilidad de nuestros estudios geotécnicos.
-                </p>
-                
-                <div className="space-y-6">
-                  {[
-                    {
-                      title: "Equipos de campo de alta precisión",
-                      description: "Contamos con penetrómetros CPT/CPTU digitales, equipos de refracción sísmica y ensayos geofísicos avanzados para caracterización in situ."
-                    },
-                    {
-                      title: "Laboratorio geotécnico certificado",
-                      description: "Nuestro laboratorio cuenta con certificación ISO 17025 y equipos para todo tipo de ensayos estáticos y dinámicos de suelos y rocas."
-                    },
-                    {
-                      title: "Software de modelación especializado",
-                      description: "Utilizamos programas como PLAXIS, Slide, FLAC y software de desarrollo propio para modelación avanzada del comportamiento geotécnico."
-                    },
-                    {
-                      title: "Sistemas de monitoreo continuo",
-                      description: "Implementamos redes de monitoreo con transmisión en tiempo real para seguimiento de variables geotécnicas críticas."
-                    }
-                  ].map((tech, idx) => (
-                    <div key={idx} className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
-                      <h3 className="text-lg font-semibold text-[#2C3336] mb-2">{tech.title}</h3>
-                      <p className="text-gray-600">{tech.description}</p>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="mt-10">
-                  <Button className="bg-[#2C3336] hover:bg-[#1F4E5F] text-white transition-colors duration-500">
-                    Conocer nuestras capacidades técnicas
-                  </Button>
-                </div>
-              </div>
-              
-              <div className="relative">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-4">
-                    <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg h-48">
-                      <img 
-                        src="https://images.unsplash.com/photo-1635001103368-ab0a166dc9f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                        alt="Equipo de campo" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg h-64">
-                      <img 
-                        src="https://images.unsplash.com/photo-1581093806997-124204d9fa9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                        alt="Software de modelación" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-4 mt-8">
-                    <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg h-64">
-                      <img 
-                        src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                        alt="Laboratorio geotécnico" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg h-48">
-                      <img 
-                        src="https://images.unsplash.com/photo-1581092921461-39b1cb2de9be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                        alt="Monitoreo continuo" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Tarjeta flotante */}
-                <div className="absolute -bottom-10 -right-10 bg-white p-5 rounded-xl shadow-xl border border-gray-100 max-w-xs">
-                  <div className="flex items-center mb-3">
-                    <LineChart className="h-5 w-5 text-[#1F4E5F] mr-3" />
-                    <h3 className="font-semibold text-[#2C3336]">Precisión garantizada</h3>
-                  </div>
-                  <p className="text-gray-600 text-sm">
-                    Nuestros equipos y metodologías proporcionan resultados con márgenes de error inferiores al 2% en caracterizaciones geotécnicas.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         
         {/* CTA final */}
         <section className="py-20 bg-[#1F4E5F] text-white overflow-hidden">
@@ -906,6 +590,6 @@ const Geosciences = () => {
       <Footer />
     </div>
   );
-};
-
-export default Geosciences;
+ };
+ 
+ export default Geosciences;

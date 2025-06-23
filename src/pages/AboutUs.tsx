@@ -54,11 +54,67 @@ const AboutUs = () => {
     }
   };
 
+  const timelineData = [
+    {
+      year: '2013',
+      title: 'Fundación de R&DC',
+      description: 'Nacemos en Medellín como una firma de consultoría fundada por investigadores en ingeniería sísmica y profesionales del diseño en concreto reforzado generando capacidades únicas en estructuras y geotecnia.',
+      highlight: 'Primeros proyectos con enfoque en diseño estructural avanzado para el sector residencial.'
+    },
+    {
+      year: '2015',
+      title: 'Consolidación del enfoque en innovación',
+      description: 'Decidimos destinar parte de nuestros recursos a inversión sostenida en I+D, desarrollando soluciones propias para resolver necesidades que el mercado no atendía.',
+      highlight: 'Inicio del desarrollo de ProDet como herramienta interna.'
+    },
+    {
+      year: '2017',
+      title: 'Expansión internacional',
+      description: 'Iniciamos nuestro partnership con la empresa Oscar Ramirez y Asociados-Ingenieros Consultores en Ciudad de Panamá y comenzamos a ejecutar proyectos de gran altura.',
+      highlight: 'Hospital del Niño: Primer proyecto con diseño por desempeño en Panamá.'
+    },
+    {
+      year: '2023',
+      title: 'Tecnología Propia en el mercado',
+      description: 'Abrimos la distribución comercial de ProDet compartiendo con la comunidad de ingenieros estructurales algunas de nuestras herramientas tecnologicas.',
+      highlight: 'Nace StructuBIM como plataforma web para reforzamiento inteligente.'
+    },
+    {
+      year: '2024',
+      title: 'Más de 70 proyectos entregados',
+      description: 'Diseñamos edificios de hasta 70 pisos bajo metodologías avanzadas como las sugeridas en el LATBSDC, manteniendo siempre la promesa de brindar tranquilidad estructural y financiera.',
+      highlight: 'Con el proyecto Bioma iniciamos el diseño del edificio con mayor esbeltez hasta el momento en ciudad de Panamá.'
+    }
+  ];
+
+  const valuesData = [
+    {
+        icon: CheckCircle,
+        text: "Excelencia técnica basada en evidencia"
+    },
+    {
+        icon: Lightbulb,
+        text: "Innovación aplicada al contexto real del cliente"
+    },
+    {
+        icon: Shield,
+        text: "Compromiso con la seguridad y la integridad estructural"
+    },
+    {
+        icon: Leaf,
+        text: "Responsabilidad ambiental y eficiencia constructiva"
+    },
+    {
+        icon: Users,
+        text: "Colaboración activa entre diseño, construcción y tecnología"
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <Header />
       <main>
-        {/* Hero Section - con video o imagen dinámica */}
+        {/* Hero Section */}
         <section className="relative h-[80vh] md:h-screen overflow-hidden bg-[#111111]">
           {/* Video/Imagen de fondo con overlay */}
           <div className="absolute inset-0 z-0">
@@ -124,8 +180,8 @@ const AboutUs = () => {
                 transition={{ duration: 0.8, delay: 0.7 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-white leading-tight mb-6"
               >
-                25 años de <span className="text-[#961A1D]">excelencia</span> <br className="hidden md:block" />
-                en ingeniería
+                Una historia de <span className="text-[#961A1D]">excelencia</span>, <br className="hidden md:block" />
+                innovación e impacto
               </motion.h1>
               
               <motion.p 
@@ -134,8 +190,7 @@ const AboutUs = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-xl text-white/80 mb-8 max-w-2xl"
               >
-                Combinando precisión técnica e innovación para proteger vidas y 
-                patrimonio a través de soluciones de ingeniería de vanguardia.
+                R&DC surge de la unión entre el mundo académico y el sector productivo, con una misión clara: resolver los retos estructurales más exigentes.
               </motion.p>
               
               <motion.div
@@ -166,8 +221,8 @@ const AboutUs = () => {
                 <div className="flex items-center">
                   <Award className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">25+</div>
-                    <div className="text-white/70 text-xs">Años de experiencia</div>
+                    <div className="text-white font-bold text-2xl">11+</div>
+                    <div className="text-white/70 text-xs">Años de operaciones</div>
                   </div>
                 </div>
               </motion.div>
@@ -181,8 +236,8 @@ const AboutUs = () => {
                 <div className="flex items-center">
                   <Users className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">50+</div>
-                    <div className="text-white/70 text-xs">Expertos en ingeniería</div>
+                    <div className="text-white font-bold text-2xl">30+</div>
+                    <div className="text-white/70 text-xs">Profesionales expertos</div>
                   </div>
                 </div>
               </motion.div>
@@ -196,8 +251,8 @@ const AboutUs = () => {
                 <div className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">500+</div>
-                    <div className="text-white/70 text-xs">Proyectos completados</div>
+                    <div className="text-white font-bold text-2xl">70+</div>
+                    <div className="text-white/70 text-xs">Proyectos entregados</div>
                   </div>
                 </div>
               </motion.div>
@@ -248,9 +303,7 @@ const AboutUs = () => {
                 </h2>
                 
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Desde 1998, R&DC ha evolucionado de un pequeño estudio de ingeniería 
-                  a una firma líder en consultoría, manteniendo siempre la excelencia 
-                  técnica y la innovación como pilares fundamentales.
+                   R&DC surge de la unión entre el mundo académico y el sector productivo, con una misión clara: resolver los retos estructurales más exigentes del mercado mediante ciencia, experiencia y tecnología propia.
                 </p>
               </motion.div>
               
@@ -258,38 +311,7 @@ const AboutUs = () => {
               <motion.div variants={itemVariants} className="relative">
                 <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gray-200"></div>
                 
-                {[
-                  {
-                    year: '1998',
-                    title: 'Fundación',
-                    description: 'Risk & Design Consulting nace como una firma especializada en ingeniería sísmica en Medellín.',
-                    highlight: 'Primeros 5 proyectos importantes en el sector residencial.'
-                  },
-                  {
-                    year: '2005',
-                    title: 'Expansión de Servicios',
-                    description: 'Incorporamos el área de Geociencias para ofrecer soluciones integrales a nuestros clientes.',
-                    highlight: 'Participación en el primer proyecto de microzonificación sísmica en Colombia.'
-                  },
-                  {
-                    year: '2012',
-                    title: 'Internacionalización',
-                    description: 'Abrimos nuestra primera oficina internacional en Ciudad de Panamá.',
-                    highlight: 'Inicio de operaciones en 3 países de Centroamérica.'
-                  },
-                  {
-                    year: '2018',
-                    title: 'Innovación Digital',
-                    description: 'Creamos el departamento de Computación para desarrollo de soluciones digitales avanzadas.',
-                    highlight: 'Lanzamiento de nuestra plataforma propietaria de análisis estructural.'
-                  },
-                  {
-                    year: '2023',
-                    title: 'Actualidad',
-                    description: 'Consolidación como referente en ingeniería de precisión en Latinoamérica.',
-                    highlight: 'Más de 500 proyectos exitosos y un equipo de 50+ expertos.'
-                  }
-                ].map((milestone, idx) => (
+                {timelineData.map((milestone, idx) => (
                   <div key={idx} className={`flex items-start mb-16 last:mb-0 ${idx % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                     <div className={`w-1/2 ${idx % 2 === 0 ? 'pr-12 text-right' : 'pl-12'}`}>
                       <div className={`inline-block px-4 py-1 rounded-full mb-2 font-bold text-white`} style={{ backgroundColor: '#961A1D' }}>
@@ -320,21 +342,20 @@ const AboutUs = () => {
             <div className="max-w-4xl mx-auto mb-16 text-center">
               <div className="inline-flex items-center justify-center mb-4">
                 <div className="h-px w-12 bg-[#961A1D]"></div>
-                <span className="px-4 text-sm uppercase tracking-wider text-gray-500 font-medium">Propósito</span>
+                <span className="px-4 text-sm uppercase tracking-wider text-gray-500 font-medium">Nuestra Esencia</span>
                 <div className="h-px w-12 bg-[#961A1D]"></div>
               </div>
               
               <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2C3336] leading-tight mb-6">
-                Nuestra <span className="text-[#961A1D]">esencia</span>
+                Ciencia, Innovación y Compromiso con la <span className="text-[#961A1D]">Seguridad</span>
               </h2>
               
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Los pilares fundamentales que guían nuestro trabajo y definen
-                nuestra identidad como organización.
+                Los principios que guían nuestro trabajo y definen el ADN de R&DC: resolver con excelencia los retos estructurales más exigentes, desde la tecnología, el análisis profundo y la ingeniería de precisión.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="h-2 bg-[#961A1D]"></div>
                 <div className="p-8">
@@ -345,15 +366,13 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-bold text-[#2C3336] mb-4">Misión</h3>
                   
                   <p className="text-gray-600 mb-6">
-                    Proteger vidas y patrimonio a través de soluciones de ingeniería de vanguardia, 
-                    combinando excelencia técnica, innovación y un profundo compromiso con la seguridad 
-                    y la sostenibilidad en cada proyecto que emprendemos.
+                    Proteger vidas, patrimonio e inversión mediante soluciones estructurales y geotécnicas de alto nivel técnico, desarrolladas a partir de investigación, tecnología propia y una comprensión profunda de cada proyecto.
                   </p>
                   
                   <div className="pt-6 border-t border-gray-100">
                     <div className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-[#961A1D] mr-3 flex-shrink-0 mt-0.5" />
-                      <p className="text-gray-700 text-sm">Preservar vidas humanas mediante diseños seguros</p>
+                      <p className="text-gray-700 text-sm">Preservar la vida y la rentabilidad mediante ingeniería basada en innovación.</p>
                     </div>
                   </div>
                 </div>
@@ -369,16 +388,13 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-bold text-[#2C3336] mb-4">Visión</h3>
                   
                   <p className="text-gray-600 mb-6">
-                    Ser reconocidos como el referente en consultoría de ingeniería estructural 
-                    y gestión de riesgos en Latinoamérica, liderando la integración de 
-                    tecnologías avanzadas y metodologías innovadoras para crear infraestructuras 
-                    más seguras y resilientes.
+                    Ser reconocidos como la firma que lidera la transformación de la consultoría estructural en Colombia y Panamá, gracias al uso de tecnologías propias, pensamiento científico y una profunda comprensión de los desafíos del sector inmobiliario.
                   </p>
                   
                   <div className="pt-6 border-t border-gray-100">
                     <div className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-[#1F4E5F] mr-3 flex-shrink-0 mt-0.5" />
-                      <p className="text-gray-700 text-sm">Liderar la innovación en ingeniería de precisión</p>
+                      <p className="text-gray-700 text-sm">Impulsar una nueva era de ingeniería estructural: precisa, ágil y alineada con el negocio.</p>
                     </div>
                   </div>
                 </div>
@@ -394,22 +410,12 @@ const AboutUs = () => {
                   <h3 className="text-2xl font-bold text-[#2C3336] mb-4">Valores</h3>
                   
                   <div className="text-gray-600 mb-6 space-y-3">
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-[#2C3336] mr-3 flex-shrink-0 mt-0.5" />
-                      <p>Excelencia técnica</p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-[#2C3336] mr-3 flex-shrink-0 mt-0.5" />
-                      <p>Innovación constante</p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-[#2C3336] mr-3 flex-shrink-0 mt-0.5" />
-                      <p>Compromiso con la seguridad</p>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-[#2C3336] mr-3 flex-shrink-0 mt-0.5" />
-                      <p>Responsabilidad ambiental</p>
-                    </div>
+                    {valuesData.map((value, idx) => (
+                      <div key={idx} className="flex items-start">
+                        <value.icon className="h-5 w-5 text-[#2C3336] mr-3 flex-shrink-0 mt-0.5" />
+                        <p>{value.text}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -539,7 +545,7 @@ const AboutUs = () => {
                 },
                 {
                   icon: CheckCircle,
-                  value: "500+",
+                  value: "70+",
                   label: "Proyectos completados",
                   description: "Soluciones implementadas con éxito"
                 },

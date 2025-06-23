@@ -6,32 +6,32 @@ const services = [
   {
     icon: Building2,
     title: 'Ingeniería Estructural',
-    subtitle: 'Precisión y seguridad en cada estructura',
+    subtitle: 'Precisión técnica para decisiones inteligentes',
     description:
-      'Combinamos análisis avanzados con décadas de experiencia para ofrecer soluciones estructurales optimizadas que garantizan seguridad y eficiencia en zonas de alta actividad sísmica.',
+      'Combinamos simulación avanzada, experiencia en métodos prescriptivos y diseño por desempeño a través de tecnología propia para entregar soluciones estructurales adaptadas a las condiciones sísmicas y presupuestales de cada proyecto.',
     features: [
       {
         title: 'Diseño Sismorresistente',
         description:
-          'Edificaciones que responden de manera óptima ante eventos sísmicos, preservando vidas y minimizando daños estructurales.',
+          'Diseñamos estructuras en concreto reforzado no solamente seguras si no que además alineadas con las metas financieras de su proyecto.',
       },
       {
-        title: 'Análisis No-Lineal',
+        title: 'Predimensionamiento con cantidades exactas',
         description:
-          'Simulaciones avanzadas del comportamiento estructural bajo cargas extremas para validar el rendimiento esperado.',
+          'Desde la etapa de prefactibilidad nos integramos con el equipo desarrollador para evaluar alternativas estructurales con datos precisos de consumo de material.',
       },
       {
-        title: 'Reforzamiento Estructural',
+        title: 'Ingeniería de Valor',
         description:
-          'Rehabilitación y actualización de estructuras existentes para cumplir con normativas actuales de seguridad.',
+          'Generamos alternativas estructurales para proyectos existentes buscando mejores respuestas e impactos positivos para el proyecto.',
       },
     ],
     image:
       'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1170&auto=format&fit=crop',
     stats: [
-      { value: '25+', label: 'Años de experiencia' },
-      { value: '300+', label: 'Proyectos completados' },
-      { value: '100%', label: 'Cumplimiento normativo' },
+      { value: '11+', label: 'Años en el mercado' },
+      { value: '60+', label: 'Edificios diseñados' },
+      { value: '2', label: 'Países' },
     ],
     color: '#961A1D',
     bgGradient: 'from-[#961A1D]/5 to-[#961A1D]/0',
@@ -39,32 +39,32 @@ const services = [
   {
     icon: Mountain,
     title: 'Geociencias',
-    subtitle: 'Entendiendo el terreno para construir con confianza',
+    subtitle: 'Decisiones estructurales inteligentes',
     description:
-      'Analizamos las condiciones del suelo y subsuelo para fundamentar decisiones estructurales críticas, optimizando la interacción suelo-estructura en cada proyecto.',
+      'Integramos la caracterización del suelo al diseño estructural para evitar sobrecostos y tomar decisiones seguras desde la etapa de factibilidad.',
     features: [
       {
         title: 'Caracterización Geotécnica',
         description:
-          'Investigación exhaustiva del suelo para determinar sus propiedades físicas y mecánicas relevantes para el diseño.',
+          'Evaluamos riesgos y contingencias presupuestales antes de comprar el lote, evitando sorpresas en cimentaciones y movimientos de tierra.',
       },
       {
-        title: 'Microzonificación Sísmica',
+        title: 'Caracterización sísmica local',
         description:
-          'Identificación de zonas con comportamiento sísmico similar para optimizar el diseño estructural según el terreno.',
+          'Utilizamos modelos de propagación de onda considerando la topografía para definir el espectro de diseño particular del sitio.',
       },
       {
         title: 'Estabilidad de Taludes',
         description:
-          'Análisis y diseño de soluciones para garantizar la seguridad en terrenos con pendientes pronunciadas.',
+          'En topografías agresivas, desarrollamos capacidades para producir soluciones geotécnicas seguras y económicamente viables.',
       },
     ],
     image:
       'https://storage.googleapis.com/cluvi/Web-Risk/geociencias.png',
     stats: [
-      { value: '1,500+', label: 'Estudios realizados' },
-      { value: '85+', label: 'Municipios evaluados' },
-      { value: '25M m²', label: 'Terreno analizado' },
+      { value: '60+', label: 'Proyectos apoyados' },
+      { value: '600K+', label: 'm² caracterizados' },
+      { value: '100%', label: 'Decisiones seguras' },
     ],
     color: '#1F4E5F',
     bgGradient: 'from-[#1F4E5F]/5 to-[#1F4E5F]/0',
@@ -74,30 +74,30 @@ const services = [
     title: 'Computación',
     subtitle: 'Transformando datos en decisiones de ingeniería',
     description:
-      'Desarrollamos y aplicamos soluciones computacionales avanzadas que potencian la precisión del diseño, mejoran la colaboración y optimizan el ciclo de vida de los proyectos.',
+      'Creamos y aplicamos tecnologia propia para responder preguntas que las herramientas tradicionales no logran resolver.',
     features: [
       {
-        title: 'Modelado BIM',
+        title: 'Modelado BIM Integrado',
         description:
-          'Creación de gemelos digitales de edificaciones para optimizar el diseño, construcción y mantenimiento a lo largo del ciclo de vida.',
+          'Conectamos nuestros diseños estructurales con datos de obra, reforzamiento y consumos para decisiones rápidas y seguras.',
       },
       {
-        title: 'Simulación Avanzada',
+        title: 'Simulación Avanzada y Parametrización',
         description:
-          'Modelado de elementos finitos y análisis paramétrico para predecir comportamientos estructurales complejos.',
+          'Implementamos modelos numéricos y herramientas propias para anticipar el comportamiento de sistemas complejos bajo múltiples escenarios.',
       },
       {
-        title: 'Visualización de Datos',
+        title: 'Visualización y Explotación de Datos',
         description:
-          'Transformación de información técnica compleja en visualizaciones intuitivas para facilitar la toma de decisiones.',
+          'Convertimos resultados técnicos en visualizaciones simples y comparables, facilitando la toma de decisiones informadas.',
       },
     ],
     image:
       'https://storage.googleapis.com/cluvi/Web-Risk/computacion.png',
     stats: [
-      { value: '100%', label: 'Implementación BIM' },
-      { value: '35%', label: 'Reducción de errores' },
-      { value: '12+', label: 'Software especializado' },
+      { value: '100%', label: 'Proyectos con BIM' },
+      { value: '50+', label: 'Opciones de refuerzo' },
+      { value: '12+', label: 'Herramientas propias' },
     ],
     color: '#2C3336',
     bgGradient: 'from-[#2C3336]/5 to-[#2C3336]/0',
@@ -195,8 +195,7 @@ const ServicesSection: React.FC = () => {
           </motion.h2>
 
           <motion.p variants={itemVariants} className="text-lg text-gray-600 max-w-3xl mx-auto">
-            25 años de experiencia combinando ciencia, ingeniería y tecnología para proteger vidas
-            y patrimonio en Colombia y Panamá.
+            Más de una década ayudando a desarrolladores a tomar mejores decisiones desde el diseño, con precisión técnica y respaldo normativo en Colombia y Panamá.
           </motion.p>
         </motion.div>
 
@@ -257,7 +256,7 @@ const ServicesSection: React.FC = () => {
                       width: '30%',
                     }}
                   />
-                  <div className="absolute top-6 left-6 z-20 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg">
+                  <div className="absolute top-6 left-6 z-20 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg flex items-center">
                     <ActiveIcon
                       className="h-4 w-4 mr-2"
                       style={{ color: services[activeService].color }}

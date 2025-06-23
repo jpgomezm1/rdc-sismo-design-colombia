@@ -177,8 +177,8 @@ const StructuralEngineering = () => {
                 transition={{ duration: 0.8, delay: 0.7 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-white leading-tight mb-6"
               >
-                Ingeniería <span className="text-[#961A1D]">Estructural</span> <br className="hidden md:block" />
-                de precisión
+                Ingeniería estructural que <span className="text-[#961A1D]">protege vidas</span> <br className="hidden md:block" />
+                y rentabilidad
               </motion.h1>
               
               <motion.p 
@@ -187,9 +187,8 @@ const StructuralEngineering = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-xl text-white/80 mb-8 max-w-2xl"
               >
-                Combinamos análisis avanzados con décadas de experiencia para ofrecer soluciones 
-                estructurales optimizadas que garantizan seguridad y eficiencia en zonas de alta 
-                actividad sísmica.
+                Más de una década diseñando edificios de concreto reforzado en Colombia y Panamá,
+                con herramientas propias que reducen incertidumbre, optimizan costos y aceleran decisiones.
               </motion.p>
               
               <motion.div
@@ -220,8 +219,8 @@ const StructuralEngineering = () => {
                 <div className="flex items-center">
                   <Building2 className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">500+</div>
-                    <div className="text-white/70 text-xs">Proyectos completados</div>
+                    <div className="text-white font-bold text-2xl">60+</div>
+                    <div className="text-white/70 text-xs">Edificios diseñados</div>
                   </div>
                 </div>
               </motion.div>
@@ -236,7 +235,7 @@ const StructuralEngineering = () => {
                   <ShieldCheck className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
                     <div className="text-white font-bold text-2xl">100%</div>
-                    <div className="text-white/70 text-xs">Cumplimiento normativo</div>
+                    <div className="text-white/70 text-xs">Cantidades exactas</div>
                   </div>
                 </div>
               </motion.div>
@@ -250,7 +249,7 @@ const StructuralEngineering = () => {
                 <div className="flex items-center">
                   <Award className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">25+</div>
+                    <div className="text-white font-bold text-2xl">11+</div>
                     <div className="text-white/70 text-xs">Años de experiencia</div>
                   </div>
                 </div>
@@ -312,17 +311,17 @@ const StructuralEngineering = () => {
                   {
                     icon: Building2,
                     title: "Diseño Sismorresistente",
-                    description: "Desarrollamos edificaciones que responden de manera óptima ante eventos sísmicos, preservando vidas y minimizando daños estructurales."
+                    description: "Diseñamos estructuras en concreto reforzado no solamente seguras sino que además alineadas con las metas financieras de su proyecto."
                   },
                   {
-                    icon: Activity,
-                    title: "Análisis No-Lineal",
-                    description: "Realizamos simulaciones avanzadas del comportamiento estructural bajo cargas extremas para validar el rendimiento esperado."
+                    icon: BarChart3,
+                    title: "Predimensionamiento con cantidades exactas",
+                    description: "Desde la etapa de prefactibilidad nos integramos con el equipo desarrollador para evaluar cabidas y realizar pre-dimensionamientos de alternativas estructurales siempre acompañadas de datos precisos de consumo de material."
                   },
                   {
-                    icon: Construction,
-                    title: "Reforzamiento Estructural",
-                    description: "Evaluamos y diseñamos soluciones para la rehabilitación y actualización de estructuras existentes para cumplir con normativas actuales."
+                    icon: Lightbulb,
+                    title: "Ingeniería de Valor",
+                    description: "Generamos alternativas estructurales para proyectos existentes buscando mejores respuestas e impactos positivos para el proyecto."
                   }
                 ].map((service, idx) => (
                   <div key={idx} className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
@@ -339,6 +338,37 @@ const StructuralEngineering = () => {
                 ))}
               </motion.div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Nueva sección de indicadores */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-2xl font-bold text-[#2C3336] mb-8">
+                Nuestros <span className="text-[#961A1D]">indicadores</span>
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-white p-6 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-[#961A1D] mb-2">11+</div>
+                  <div className="text-sm text-gray-600 mb-2">Años en el mercado</div>
+                  <div className="text-xs text-gray-500">del diseño de edificios de concreto reforzado + 20 de experiencia en Innovación</div>
+                </div>
+                
+                <div className="bg-white p-6 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-[#961A1D] mb-2">60+</div>
+                  <div className="text-sm text-gray-600 mb-2">Edificios diseñados</div>
+                  <div className="text-xs text-gray-500">entre 10 y 40 pisos</div>
+                </div>
+                
+                <div className="bg-white p-6 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-[#961A1D] mb-2">2</div>
+                  <div className="text-sm text-gray-600 mb-2">Países</div>
+                  <div className="text-xs text-gray-500">Proyectos de mediana y gran altura en Colombia y Panamá</div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         
@@ -527,7 +557,6 @@ const StructuralEngineering = () => {
                         <div className="inline-block px-3 py-1 rounded-full text-white text-sm font-bold mb-3" style={{ backgroundColor: '#961A1D' }}>
                           Paso {step.number}
                         </div>
-                        
                         <h3 className="text-xl font-bold text-[#2C3336] mb-3">{step.title}</h3>
                         <p className="text-gray-600 mb-4">{step.description}</p>
                         
@@ -705,7 +734,7 @@ const StructuralEngineering = () => {
           </div>
         </section>
         
-        {/* Casos de éxito / Testimonios */}
+        {/* Casos de éxito / Testimonios
         <section className="py-24 bg-gray-50">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center mb-16">
@@ -787,7 +816,7 @@ const StructuralEngineering = () => {
               </Button>
             </div>
           </div>
-        </section>
+        </section> */}
         
         {/* CTA final */}
         <section className="py-20 bg-[#2C3336] text-white overflow-hidden">

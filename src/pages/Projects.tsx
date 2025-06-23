@@ -69,109 +69,109 @@ const Projects = () => {
     { id: 'industrial', label: 'Industrial' }
   ];
   
-  // Datos de proyectos
+  // Datos de proyectos actualizados
   const projects = [
     {
       id: 1,
-      title: 'Torre Empresarial Atrio',
-      location: 'Bogotá, Colombia',
+      title: 'Proyecto Generation',
+      location: 'Ciudad de Panamá, Panamá',
       description: 'Análisis de respuesta sísmica y diseño estructural para este edificio emblemático de 44 pisos en el centro de Bogotá.',
       service: 'Ingeniería Estructural',
       area: '25,000 m²',
       year: '2022',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/generation_panama_check.png',
       client: 'Grupo Empresarial Andino',
       tags: ['edificios', 'colombia']
     },
     {
       id: 2,
-      title: 'Centro Comercial Multiplaza',
+      title: 'Proyecto Corotú',
       location: 'Ciudad de Panamá, Panamá',
       description: 'Estudio geotécnico y análisis de suelos para la ampliación de este importante centro comercial en Panamá.',
       service: 'Geociencias',
       area: '18,500 m²',
       year: '2021',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/corotu_panama_check.png',
       client: 'Grupo Roble',
       tags: ['comercial', 'panama']
     },
     {
       id: 3,
-      title: 'Hospital Pablo Tobón Uribe',
-      location: 'Medellín, Colombia',
+      title: 'Proyecto Bioma',
+      location: 'Ciudad de Panamá, Panamá',
       description: 'Consultoría en riesgos y análisis de vulnerabilidad sísmica para esta institución de salud crítica.',
       service: 'Consultoría en Riesgos',
       area: '12,000 m²',
       year: '2023',
       featured: false,
-      image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/bioma_panama_check.png',
       client: 'Secretaría de Salud',
       tags: ['salud', 'colombia']
     },
     {
       id: 4,
-      title: 'Puente Vial La Flora',
-      location: 'Cali, Colombia',
+      title: 'Proyecto Uptown',
+      location: 'Ciudad de Panamá, Panamá',
       description: 'Diseño estructural y análisis sísmico para este importante puente urbano que conecta dos sectores vitales de la ciudad.',
       service: 'Ingeniería Estructural',
       area: '450 m longitud',
       year: '2020',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/uptown_panama_check.png',
       client: 'Secretaría de Infraestructura',
       tags: ['infraestructura', 'colombia']
     },
     {
       id: 5,
-      title: 'Conjunto Alto Prado',
-      location: 'Barranquilla, Colombia',
+      title: 'Belo Horizonte',
+      location: 'Medellín, Colombia',
       description: 'Estudio de suelos y recomendaciones para cimentación de este moderno complejo residencial de lujo en la costa caribe.',
       service: 'Geociencias',
       area: '35,000 m²',
       year: '2021',
       featured: false,
-      image: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/belo_horizonte_col_ready.png',
       client: 'Constructora del Norte',
       tags: ['residencial', 'colombia']
     },
     {
       id: 6,
-      title: 'Torre Bicsa Financial Center',
-      location: 'Ciudad de Panamá, Panamá',
+      title: 'Kosmos',
+      location: 'Medellín, Colombia',
       description: 'Modelación estructural avanzada y análisis sísmico para este rascacielos de 68 pisos en el centro financiero.',
       service: 'Ingeniería Estructural',
       area: '22,000 m²',
       year: '2019',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/kosmos_colombia_check.png',
       client: 'BICSA Corp',
       tags: ['edificios', 'panama']
     },
     {
       id: 7,
-      title: 'Estadio Metropolitano',
-      location: 'Barranquilla, Colombia',
+      title: 'Madero de los Bosques',
+      location: 'Medellín, Colombia',
       description: 'Evaluación de la respuesta dinámica y reforzamiento estructural para la renovación del estadio principal de la ciudad.',
       service: 'Ingeniería Estructural',
       area: '40,000 m²',
       year: '2023',
       featured: false,
-      image: 'https://images.unsplash.com/photo-1538671486197-d9274eb52c33?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/madero_colombia_check.png',
       client: 'Alcaldía de Barranquilla',
       tags: ['deportivo', 'colombia']
     },
     {
       id: 8,
-      title: 'Planta Industrial Aruba',
-      location: 'Colón, Panamá',
+      title: 'Villa Cielo',
+      location: 'Medellín, Colombia',
       description: 'Modelación computacional y simulación sísmica para esta moderna planta industrial con equipos sensibles.',
       service: 'Computación',
       area: '15,000 m²',
       year: '2022',
       featured: false,
-      image: 'https://images.unsplash.com/photo-1622633401885-2070cd7ab969?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/villa_cielo_colombia_check.png',
       client: 'Grupo Industrial Del Istmo',
       tags: ['industrial', 'panama']
     }
@@ -265,8 +265,8 @@ const Projects = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-xl text-white/80 mb-8 max-w-2xl"
               >
-                Explore nuestra trayectoria de más de 25 años en proyectos de ingeniería 
-                estructural, geociencias y computación en Colombia y Panamá.
+                Explore nuestra trayectoria de más de 11 años diseñando edificios de concreto reforzado
+                entre 10 y 40 pisos en Colombia y Panamá, con tecnología propia que garantiza resultados precisos.
               </motion.p>
               
               <motion.div
@@ -297,8 +297,8 @@ const Projects = () => {
                 <div className="flex items-center">
                   <Building2 className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">500+</div>
-                    <div className="text-white/70 text-xs">Proyectos completados</div>
+                    <div className="text-white font-bold text-2xl">60+</div>
+                    <div className="text-white/70 text-xs">Edificios completados</div>
                   </div>
                 </div>
               </motion.div>
@@ -327,7 +327,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">25+</div>
+                    <div className="text-white font-bold text-2xl">11+</div>
                     <div className="text-white/70 text-xs">Años de experiencia</div>
                   </div>
                 </div>
@@ -560,156 +560,156 @@ const Projects = () => {
                           >
                             Ver detalles
                             <ArrowRight className="ml-2 h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
-                          </button>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-              
-              {/* Si no hay proyectos que coincidan con el filtro */}
-              {filteredProjects.length === 0 && (
-                <motion.div 
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  className="text-center py-20 bg-gray-50 rounded-xl border border-gray-100"
-                >
-                  <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
-                  <Filter className="h-8 w-8 text-gray-400" />
-                  </div>
-                  <h3 className="text-xl font-medium text-gray-600 mb-4">No se encontraron proyectos para esta categoría</h3>
-                  <p className="text-gray-500 mb-6 max-w-md mx-auto">Intenta seleccionar otra categoría o restablecer los filtros</p>
-                  <Button 
-                    variant="outline" 
-                    onClick={() => setActiveFilter('all')}
-                    className="mt-2 bg-white hover:bg-[#961A1D] hover:text-white transition-colors duration-300"
-                  >
-                    <Check className="h-4 w-4 mr-2" />
-                    Ver todos los proyectos
-                  </Button>
-                </motion.div>
-              )}
-              
-              {/* Pagination/Load More */}
-              {filteredProjects.length > 0 && (
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.8 }}
-                  className="mt-16 text-center"
-                >
-                  <Button className="bg-[#2C3336] hover:bg-[#961A1D] text-white px-8 py-6 text-base font-medium rounded-md transition-colors duration-500 group">
-                    <span className="flex items-center">
-                      <PlusCircle className="h-5 w-5 mr-2" />
-                      Cargar más proyectos
-                      <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1">→</span>
-                    </span>
-                  </Button>
-                </motion.div>
-              )}
-            </div>
-          </div>
-        </section>
-        
-        {/* Statistics Section */}
-        <section className="py-24 bg-gray-50">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
-              <div className="relative">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-[#961A1D]/5 rounded-full blur-3xl"></div>
-                <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-[#961A1D]/5 rounded-full blur-3xl"></div>
-                
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                  {[
-                    { 
-                      value: "500+", 
-                      label: "Proyectos Completados",
-                      description: "En los últimos 25 años"
-                    },
-                    { 
-                      value: "2.5M", 
-                      label: "m² Diseñados",
-                      description: "De superficie construida"
-                    },
-                    { 
-                      value: "25+", 
-                      label: "Años de Experiencia",
-                      description: "En el sector de ingeniería"
-                    },
-                    { 
-                      value: "2", 
-                      label: "Países",
-                      description: "Con presencia activa"
-                    }
-                  ].map((stat, idx) => (
-                    <motion.div 
-                      key={idx} 
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2 + (idx * 0.1) }}
-                      className="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                    >
-                      <div className="text-4xl md:text-5xl font-montserrat font-bold text-[#961A1D] mb-2">{stat.value}</div>
-                      <div className="text-[#2C3336] font-medium mb-2">{stat.label}</div>
-                      <div className="text-gray-500 text-sm">{stat.description}</div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        {/* CTA final */}
-        <section className="py-20 bg-[#2C3336] text-white overflow-hidden">
-          <div className="container mx-auto px-6">
-            <div className="relative max-w-4xl mx-auto">
-              <div className="absolute -left-20 top-1/3 w-40 h-40 rounded-full bg-[#961A1D]/10 blur-3xl"></div>
-              <div className="absolute -right-20 bottom-1/3 w-40 h-40 rounded-full bg-[#961A1D]/10 blur-3xl"></div>
-              
-              <div className="relative bg-gradient-to-r from-[#2C3336]/50 to-[#1F2426]/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl border border-white/5 p-12 text-center">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#961A1D] via-[#961A1D]/50 to-transparent"></div>
-                
-                <div className="w-20 h-20 rounded-full bg-[#961A1D]/10 flex items-center justify-center mx-auto mb-8">
-                  <Building2 className="h-10 w-10 text-[#961A1D]" />
-                </div>
-                
-                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
-                  ¿Listo para llevar tu proyecto al siguiente nivel?
-                </h2>
-                
-                <p className="text-white/70 mb-8 max-w-2xl mx-auto">
-                  Contáctanos hoy mismo para una consultoría gratuita donde evaluaremos tu proyecto
-                  y te ofreceremos las mejores soluciones adaptadas a tus necesidades específicas.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
-                  <Button 
-                    className="bg-[#961A1D] hover:bg-[#961A1D] text-white px-8 py-6 text-base font-medium rounded-md transition-all duration-300 shadow-lg hover:shadow-xl group"
-                  >
-                    <span className="relative z-10 flex items-center">
-                      Agendar consultoría gratuita
-                      <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1">→</span>
-                    </span>
-                    <span className="absolute inset-0 w-0 bg-black/20 group-hover:w-full transition-all duration-300"></span>
-                  </Button>
-                  
-                  <Button 
-                    className="bg-transparent border-2 border-white/20 hover:border-white/40 text-white transition-colors duration-300"
-                  >
-                    Ver portafolio completo
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
+                         </button>
+                       </div>
+                     </CardContent>
+                   </Card>
+                 </motion.div>
+               ))}
+             </div>
+             
+             {/* Si no hay proyectos que coincidan con el filtro */}
+             {filteredProjects.length === 0 && (
+               <motion.div 
+                 initial={{ opacity: 0 }}
+                 animate={{ opacity: 1 }}
+                 transition={{ duration: 0.5 }}
+                 className="text-center py-20 bg-gray-50 rounded-xl border border-gray-100"
+               >
+                 <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mx-auto mb-4">
+                 <Filter className="h-8 w-8 text-gray-400" />
+                 </div>
+                 <h3 className="text-xl font-medium text-gray-600 mb-4">No se encontraron proyectos para esta categoría</h3>
+                 <p className="text-gray-500 mb-6 max-w-md mx-auto">Intenta seleccionar otra categoría o restablecer los filtros</p>
+                 <Button 
+                   variant="outline" 
+                   onClick={() => setActiveFilter('all')}
+                   className="mt-2 bg-white hover:bg-[#961A1D] hover:text-white transition-colors duration-300"
+                 >
+                   <Check className="h-4 w-4 mr-2" />
+                   Ver todos los proyectos
+                 </Button>
+               </motion.div>
+             )}
+             
+             {/* Pagination/Load More */}
+             {filteredProjects.length > 0 && (
+               <motion.div 
+                 initial={{ opacity: 0, y: 20 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.5, delay: 0.8 }}
+                 className="mt-16 text-center"
+               >
+                 <Button className="bg-[#2C3336] hover:bg-[#961A1D] text-white px-8 py-6 text-base font-medium rounded-md transition-colors duration-500 group">
+                   <span className="flex items-center">
+                     <PlusCircle className="h-5 w-5 mr-2" />
+                     Cargar más proyectos
+                     <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1">→</span>
+                   </span>
+                 </Button>
+               </motion.div>
+             )}
+           </div>
+         </div>
+       </section>
+       
+       {/* Statistics Section */}
+       <section className="py-24 bg-gray-50">
+         <div className="container mx-auto px-6">
+           <div className="max-w-6xl mx-auto">
+             <div className="relative">
+               <div className="absolute -top-10 -right-10 w-64 h-64 bg-[#961A1D]/5 rounded-full blur-3xl"></div>
+               <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-[#961A1D]/5 rounded-full blur-3xl"></div>
+               
+               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                 {[
+                   { 
+                     value: "60+", 
+                     label: "Edificios Completados",
+                     description: "Entre 10 y 40 pisos en los últimos 11 años"
+                   },
+                   { 
+                     value: "600K", 
+                     label: "m² Caracterizados",
+                     description: "De terreno para decisiones confiables"
+                   },
+                   { 
+                     value: "11+", 
+                     label: "Años de Experiencia",
+                     description: "En diseño de edificios de concreto reforzado"
+                   },
+                   { 
+                     value: "2", 
+                     label: "Países",
+                     description: "Con presencia activa en Colombia y Panamá"
+                   }
+                 ].map((stat, idx) => (
+                   <motion.div 
+                     key={idx} 
+                     initial={{ opacity: 0, y: 20 }}
+                     animate={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.5, delay: 0.2 + (idx * 0.1) }}
+                     className="bg-white p-8 rounded-xl shadow-lg text-center border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                   >
+                     <div className="text-4xl md:text-5xl font-montserrat font-bold text-[#961A1D] mb-2">{stat.value}</div>
+                     <div className="text-[#2C3336] font-medium mb-2">{stat.label}</div>
+                     <div className="text-gray-500 text-sm">{stat.description}</div>
+                   </motion.div>
+                 ))}
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       
+       {/* CTA final */}
+       <section className="py-20 bg-[#2C3336] text-white overflow-hidden">
+         <div className="container mx-auto px-6">
+           <div className="relative max-w-4xl mx-auto">
+             <div className="absolute -left-20 top-1/3 w-40 h-40 rounded-full bg-[#961A1D]/10 blur-3xl"></div>
+             <div className="absolute -right-20 bottom-1/3 w-40 h-40 rounded-full bg-[#961A1D]/10 blur-3xl"></div>
+             
+             <div className="relative bg-gradient-to-r from-[#2C3336]/50 to-[#1F2426]/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl border border-white/5 p-12 text-center">
+               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#961A1D] via-[#961A1D]/50 to-transparent"></div>
+               
+               <div className="w-20 h-20 rounded-full bg-[#961A1D]/10 flex items-center justify-center mx-auto mb-8">
+                 <Building2 className="h-10 w-10 text-[#961A1D]" />
+               </div>
+               
+               <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
+                 ¿Listo para llevar tu proyecto al siguiente nivel?
+               </h2>
+               
+               <p className="text-white/70 mb-8 max-w-2xl mx-auto">
+                 Contáctanos hoy mismo para una consultoría gratuita donde evaluaremos tu proyecto
+                 y te ofreceremos las mejores soluciones adaptadas a tus necesidades específicas.
+               </p>
+               
+               <div className="flex flex-col sm:flex-row justify-center gap-4">
+                 <Button 
+                   className="bg-[#961A1D] hover:bg-[#961A1D] text-white px-8 py-6 text-base font-medium rounded-md transition-all duration-300 shadow-lg hover:shadow-xl group"
+                 >
+                   <span className="relative z-10 flex items-center">
+                     Agendar consultoría gratuita
+                     <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1">→</span>
+                   </span>
+                   <span className="absolute inset-0 w-0 bg-black/20 group-hover:w-full transition-all duration-300"></span>
+                 </Button>
+                 
+                 <Button 
+                   className="bg-transparent border-2 border-white/20 hover:border-white/40 text-white transition-colors duration-300"
+                 >
+                   Ver portafolio completo
+                 </Button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+     </main>
+     <Footer />
+   </div>
+ );
 };
 
 export default Projects;

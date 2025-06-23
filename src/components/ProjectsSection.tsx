@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronRight, ChevronLeft, MapPin, Building2, Ruler, ArrowRight, Globe } from 'lucide-react';
+import { ChevronRight, ChevronLeft, MapPin, Building2, Ruler, ArrowRight, Globe, Clock, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const ProjectsSection = () => {
@@ -48,109 +48,177 @@ const ProjectsSection = () => {
     };
   }, []);
 
+  // Estadísticas actualizadas
+  const stats = [
+    {
+      icon: Building2,
+      value: "60+",
+      label: "Edificios diseñados",
+      description: "Entre 10 y 40 pisos en Colombia y Panamá"
+    },
+    {
+      icon: Clock,
+      value: "11+",
+      label: "Años de experiencia",
+      description: "En diseño de edificios de concreto reforzado"
+    },
+    {
+      icon: Users,
+      value: "30+",
+      label: "Profesionales expertos",
+      description: "Equipo multidisciplinario especializado"
+    },
+    {
+      icon: Globe,
+      value: "2",
+      label: "Países",
+      description: "Presencia activa en Colombia y Panamá"
+    }
+  ];
+
+  // Proyectos destacados actualizados
+  const featuredProjects = [
+    {
+      id: 1,
+      title: "Torre Empresarial Atrio",
+      location: "Bogotá, Colombia",
+      description: "Diseño estructural para edificio de 44 pisos con análisis de respuesta sísmica avanzado y optimización de materiales.",
+      image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      floors: "44 pisos",
+      area: "25,000 m²",
+      year: "2022",
+      service: "Ingeniería Estructural",
+      highlight: "Estructura optimizada que redujo en 15% el uso de concreto y 10% el acero estructural"
+    },
+    {
+      id: 2,
+      title: "Torre Bicsa Financial Center",
+      location: "Ciudad de Panamá, Panamá", 
+      description: "Modelación estructural avanzada y análisis sísmico para rascacielos de 68 pisos en el centro financiero.",
+      image: "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      floors: "68 pisos",
+      area: "22,000 m²", 
+      year: "2019",
+      service: "Ingeniería Estructural",
+      highlight: "Diseño por desempeño que permitió optimizar la respuesta estructural ante eventos sísmicos"
+    },
+    {
+      id: 3,
+      title: "Conjunto Residencial Alto Prado",
+      location: "Barranquilla, Colombia",
+      description: "Estudio de suelos y recomendaciones para cimentación de complejo residencial de 35 pisos en la costa caribe.",
+      image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      floors: "35 pisos",
+      area: "30,000 m²",
+      year: "2021", 
+      service: "Geociencias + Estructural",
+      highlight: "Solución de cimentación que redujo costos en 20% considerando condiciones del suelo costero"
+    }
+  ];
+
   // Datos de proyectos mejorados con más información y mejores imágenes
   const projects = [
     {
       id: 1,
-      title: 'Torre Empresarial Atrio',
-      location: 'Bogotá, Colombia',
+      title: 'Proyecto Generation',
+      location: 'Ciudad de Panamá, Panamá',
       description: 'Análisis de respuesta sísmica y diseño estructural para este edificio emblemático de 44 pisos en el centro de Bogotá.',
       service: 'Ingeniería Estructural',
       area: '25,000 m²',
       year: '2022',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/generation_panama_check.png',
       client: 'Grupo Empresarial Andino',
       tags: ['edificios', 'colombia']
     },
     {
       id: 2,
-      title: 'Centro Comercial Multiplaza',
+      title: 'Proyecto Corotú',
       location: 'Ciudad de Panamá, Panamá',
       description: 'Estudio geotécnico y análisis de suelos para la ampliación de este importante centro comercial en Panamá.',
       service: 'Geociencias',
       area: '18,500 m²',
       year: '2021',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/corotu_panama_check.png',
       client: 'Grupo Roble',
       tags: ['comercial', 'panama']
     },
     {
       id: 3,
-      title: 'Hospital Pablo Tobón Uribe',
-      location: 'Medellín, Colombia',
+      title: 'Proyecto Bioma',
+      location: 'Ciudad de Panamá, Panamá',
       description: 'Consultoría en riesgos y análisis de vulnerabilidad sísmica para esta institución de salud crítica.',
       service: 'Consultoría en Riesgos',
       area: '12,000 m²',
       year: '2023',
       featured: false,
-      image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/bioma_panama_check.png',
       client: 'Secretaría de Salud',
       tags: ['salud', 'colombia']
     },
     {
       id: 4,
-      title: 'Puente Vial La Flora',
-      location: 'Cali, Colombia',
+      title: 'Proyecto Uptown',
+      location: 'Ciudad de Panamá, Panamá',
       description: 'Diseño estructural y análisis sísmico para este importante puente urbano que conecta dos sectores vitales de la ciudad.',
       service: 'Ingeniería Estructural',
       area: '450 m longitud',
       year: '2020',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/uptown_panama_check.png',
       client: 'Secretaría de Infraestructura',
       tags: ['infraestructura', 'colombia']
     },
     {
       id: 5,
-      title: 'Conjunto Alto Prado',
-      location: 'Barranquilla, Colombia',
+      title: 'Belo Horizonte',
+      location: 'Medellín, Colombia',
       description: 'Estudio de suelos y recomendaciones para cimentación de este moderno complejo residencial de lujo en la costa caribe.',
       service: 'Geociencias',
       area: '35,000 m²',
       year: '2021',
       featured: false,
-      image: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/belo_horizonte_col_ready.png',
       client: 'Constructora del Norte',
       tags: ['residencial', 'colombia']
     },
     {
       id: 6,
-      title: 'Torre Bicsa Financial Center',
-      location: 'Ciudad de Panamá, Panamá',
+      title: 'Kosmos',
+      location: 'Medellín, Colombia',
       description: 'Modelación estructural avanzada y análisis sísmico para este rascacielos de 68 pisos en el centro financiero.',
       service: 'Ingeniería Estructural',
       area: '22,000 m²',
       year: '2019',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/kosmos_colombia_check.png',
       client: 'BICSA Corp',
       tags: ['edificios', 'panama']
     },
     {
       id: 7,
-      title: 'Estadio Metropolitano',
-      location: 'Barranquilla, Colombia',
+      title: 'Madero de los Bosques',
+      location: 'Medellín, Colombia',
       description: 'Evaluación de la respuesta dinámica y reforzamiento estructural para la renovación del estadio principal de la ciudad.',
       service: 'Ingeniería Estructural',
       area: '40,000 m²',
       year: '2023',
       featured: false,
-      image: 'https://images.unsplash.com/photo-1538671486197-d9274eb52c33?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/madero_colombia_check.png',
       client: 'Alcaldía de Barranquilla',
       tags: ['deportivo', 'colombia']
     },
     {
       id: 8,
-      title: 'Planta Industrial Aruba',
-      location: 'Colón, Panamá',
+      title: 'Villa Cielo',
+      location: 'Medellín, Colombia',
       description: 'Modelación computacional y simulación sísmica para esta moderna planta industrial con equipos sensibles.',
       service: 'Computación',
       area: '15,000 m²',
       year: '2022',
       featured: false,
-      image: 'https://images.unsplash.com/photo-1622633401885-2070cd7ab969?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Images-Projects/villa_cielo_colombia_check.png',
       client: 'Grupo Industrial Del Istmo',
       tags: ['industrial', 'panama']
     }
@@ -226,9 +294,9 @@ const ProjectsSection = () => {
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2C3336] leading-tight mb-4">
               Proyectos <span className="text-[#961A1D]">destacados</span>
             </h2>
-            <p className="text-gray-600 text-lg">
-              Una selección de nuestros proyectos más emblemáticos que demuestran nuestra 
-              experiencia y capacidad técnica en Colombia y Panamá.
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Más de 60 edificios diseñados entre 10 y 40 pisos en Colombia y Panamá,
+              con tecnología propia que garantiza cantidades exactas y múltiples alternativas de reforzamiento.
             </p>
           </div>
           

@@ -177,8 +177,8 @@ const Computing = () => {
                 transition={{ duration: 0.8, delay: 0.7 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-white leading-tight mb-6"
               >
-                <span className="text-[#961A1D]">Computación</span> <br className="hidden md:block" />
-                Avanzada
+                Computación aplicada e <span className="text-[#961A1D]">innovadora</span> <br className="hidden md:block" />
+                para resolver nuevos problemas
               </motion.h1>
               
               <motion.p 
@@ -187,8 +187,8 @@ const Computing = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-xl text-white/80 mb-8 max-w-2xl"
               >
-                Desarrollamos y aplicamos soluciones computacionales avanzadas que potencian la precisión 
-                del diseño, mejoran la colaboración y optimizan el ciclo de vida de los proyectos.
+                Creamos y aplicamos tecnología propia para responder preguntas que las
+                herramientas tradicionales no logran resolver.
               </motion.p>
               
               <motion.div
@@ -219,8 +219,8 @@ const Computing = () => {
                 <div className="flex items-center">
                   <Cpu className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">300+</div>
-                    <div className="text-white/70 text-xs">Proyectos completados</div>
+                    <div className="text-white font-bold text-2xl">100%</div>
+                    <div className="text-white/70 text-xs">Proyectos con cantidades exactas</div>
                   </div>
                 </div>
               </motion.div>
@@ -234,8 +234,8 @@ const Computing = () => {
                 <div className="flex items-center">
                   <Database className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">15+</div>
-                    <div className="text-white/70 text-xs">Tecnologías integradas</div>
+                    <div className="text-white font-bold text-2xl">50+</div>
+                    <div className="text-white/70 text-xs">Alternativas de reforzamiento</div>
                   </div>
                 </div>
               </motion.div>
@@ -249,8 +249,8 @@ const Computing = () => {
                 <div className="flex items-center">
                   <BarChart3 className="h-5 w-5 text-[#961A1D] mr-3" />
                   <div>
-                    <div className="text-white font-bold text-2xl">40%</div>
-                    <div className="text-white/70 text-xs">Reducción en tiempos</div>
+                    <div className="text-white font-bold text-2xl">12+</div>
+                    <div className="text-white/70 text-xs">Herramientas propias</div>
                   </div>
                 </div>
               </motion.div>
@@ -310,18 +310,18 @@ const Computing = () => {
                 {[
                   {
                     icon: Cpu,
-                    title: "Modelado BIM",
-                    description: "Creación de gemelos digitales de edificaciones para optimizar el diseño, construcción y mantenimiento a lo largo del ciclo de vida."
+                    title: "Modelado BIM Integrado",
+                    description: "Conectamos nuestros diseños estructurales con datos de obra, reforzamiento, consumos e iteraciones para decisiones rápidas y seguras."
                   },
                   {
                     icon: Database,
-                    title: "Simulación Avanzada",
-                    description: "Modelado de elementos finitos y análisis paramétrico para predecir comportamientos estructurales complejos ante diferentes escenarios."
+                    title: "Simulación Avanzada y Parametrización",
+                    description: "Implementamos modelos numéricos y herramientas propias para anticipar el comportamiento de sistemas complejos bajo múltiples escenarios."
                   },
                   {
                     icon: BarChart3,
-                    title: "Visualización de Datos",
-                    description: "Transformación de información técnica compleja en visualizaciones intuitivas para facilitar la toma de decisiones estratégicas."
+                    title: "Visualización y Explotación de Datos",
+                    description: "Convertimos resultados técnicos en visualizaciones simples y comparables, facilitando la toma de decisiones informadas para equipos de diseño y construcción."
                   }
                 ].map((service, idx) => (
                   <div key={idx} className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
@@ -338,6 +338,45 @@ const Computing = () => {
                 ))}
               </motion.div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Nueva sección de diferenciador */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-2xl font-bold text-[#2C3336] mb-6">
+                Nuestro <span className="text-[#961A1D]">diferenciador</span> clave
+              </h3>
+              
+              <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 mb-8">
+                <p className="text-lg text-gray-600 mb-6">
+                  Nuestros desarrollos como <strong>ProDet</strong> y <strong>StructuBIM</strong> son fruto de años de inversión en
+                  I+D. No solo usamos software: <strong>lo creamos</strong>, para ayudarte a tomar mejores
+                  decisiones, más rápido y con más confianza.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-[#961A1D] mb-2">100%</div>
+                    <div className="text-sm text-gray-600 mb-2">Proyectos estructurales</div>
+                    <div className="text-xs text-gray-500">se entregan acompañados de cantidades exactas, elemento por elemento, figura por figura</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-[#961A1D] mb-2">50+</div>
+                    <div className="text-sm text-gray-600 mb-2">Maneras diferentes</div>
+                    <div className="text-xs text-gray-500">de reforzar el edificio para acomodarse a las necesidades de tu empresa</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-[#961A1D] mb-2">12+</div>
+                    <div className="text-sm text-gray-600 mb-2">Herramientas propias</div>
+                    <div className="text-xs text-gray-500">y especializadas desarrolladas por nuestro equipo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         
@@ -523,319 +562,319 @@ const Computing = () => {
                       idx % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'
                     }`}>
                       <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                        <div className="inline-block px-3 py-1 rounded-full text-white text-sm font-bold mb-3" style={{ backgroundColor: '#961A1D' }}>
-                          Paso {step.number}
-                        </div>
-                        
-                        <h3 className="text-xl font-bold text-[#2C3336] mb-3">{step.title}</h3>
-                        <p className="text-gray-600 mb-4">{step.description}</p>
-                        
-                        <div className="space-y-2">
-                          {step.details.map((detail, detailIdx) => (
-                            <div key={detailIdx} className="flex items-start">
-                              <CheckCircle2 className="h-4 w-4 text-[#961A1D] mr-2 flex-shrink-0 mt-0.5" />
-                              <p className="text-gray-700 text-sm">{detail}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* Espacio para el lado opuesto */}
-                    <div className="hidden md:block md:w-1/2"></div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        {/* Tecnologías y herramientas */}
-        <section className="py-24 bg-gray-50">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-16">
-                <div className="inline-flex items-center justify-center mb-4">
-                  <div className="h-px w-12 bg-[#961A1D]"></div>
-                  <span className="px-4 text-sm uppercase tracking-wider text-gray-500 font-medium">Tecnología</span>
-                  <div className="h-px w-12 bg-[#961A1D]"></div>
-                </div>
-                
-                <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2C3336] leading-tight mb-6">
-                  Tecnologías <span className="text-[#961A1D]">avanzadas</span>
-                </h2>
-                
-                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Empleamos las herramientas tecnológicas más avanzadas del mercado para garantizar 
-                  resultados precisos y confiables en nuestros proyectos computacionales.
-                </p>
-                </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
-                {[
-                  {
-                    title: "Software de Modelado BIM",
-                    description: "Utilizamos plataformas avanzadas para la creación de modelos digitales inteligentes con información completa del proyecto.",
-                    tools: ["Autodesk Revit", "Tekla Structures", "BIM 360", "Navisworks", "ArchiCAD"]
-                  },
-                  {
-                    title: "Simulación y Análisis",
-                    description: "Aplicamos herramientas especializadas para simular el comportamiento de estructuras y sistemas bajo diferentes condiciones.",
-                    tools: ["ANSYS", "ABAQUS", "SAP2000", "ETABS", "PLAXIS", "OpenSees"]
-                  },
-                  {
-                    title: "Visualización de Datos",
-                    description: "Transformamos datos complejos en visualizaciones interactivas que facilitan la toma de decisiones estratégicas.",
-                    tools: ["Power BI", "Tableau", "D3.js", "Grafana", "Kibana"]
-                  },
-                  {
-                    title: "Desarrollo a Medida",
-                    description: "Creamos soluciones personalizadas utilizando diversas tecnologías de programación y frameworks modernos.",
-                    tools: ["Python", "JavaScript", "React", "Node.js", "C#", "MATLAB"]
-                  }
-                ].map((category, idx) => (
-                  <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                    <div className="h-2 bg-[#961A1D]"></div>
-                    <div className="p-8">
-                      <h3 className="text-xl font-bold text-[#2C3336] mb-3">{category.title}</h3>
-                      <p className="text-gray-600 mb-6">{category.description}</p>
-                      
-                      <div className="flex flex-wrap gap-2">
-                        {category.tools.map((tool, toolIdx) => (
-                          <span key={toolIdx} className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">
-                            {tool}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        {/* Ventajas */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="flex items-center mb-6">
-                  <div className="h-px w-12 bg-[#961A1D] mr-4"></div>
-                  <span className="text-sm uppercase tracking-wider text-gray-500 font-medium">Ventajas</span>
-                </div>
-                
-                <h2 className="text-3xl md:text-4xl font-bold text-[#2C3336] mb-6">
-                  Por qué elegir nuestras <span className="text-[#961A1D]">soluciones</span>
-                </h2>
-                
-                <div className="space-y-6">
-                  {[
-                    {
-                      title: "Experiencia en proyectos de alta complejidad técnica",
-                      description: "Nuestro equipo ha implementado soluciones en proyectos con requerimientos tecnológicos sofisticados."
-                    },
-                    {
-                      title: "Integración con sistemas y plataformas existentes",
-                      description: "Desarrollamos soluciones que se conectan perfectamente con la infraestructura tecnológica actual."
-                    },
-                    {
-                      title: "Optimización de flujos de trabajo y procesos",
-                      description: "Automatizamos tareas repetitivas y optimizamos procesos para incrementar la productividad."
-                    },
-                    {
-                      title: "Soluciones escalables y adaptables",
-                      description: "Nuestras implementaciones evolucionan con las necesidades cambiantes de su organización."
-                    },
-                    {
-                      title: "Soporte técnico continuo y capacitación",
-                      description: "Ofrecemos acompañamiento permanente para garantizar el máximo aprovechamiento de las soluciones."
-                    }
-                  ].map((benefit, idx) => (
-                    <div key={idx} className="flex items-start">
-                      <div className="w-10 h-10 rounded-full bg-[#961A1D]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckCircle2 className="h-5 w-5 text-[#961A1D]" />
-                      </div>
-                      <div className="ml-4">
-                        <h3 className="font-semibold text-[#2C3336] mb-1">{benefit.title}</h3>
-                        <p className="text-gray-600 text-sm">{benefit.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="mt-10">
-                  <Button className="bg-[#2C3336] hover:bg-[#961A1D] text-white transition-colors duration-500">
-                    Solicitar demostración tecnológica
-                  </Button>
-                </div>
-              </div>
-              
-              <div className="relative">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-[#961A1D]/5 rounded-full blur-3xl"></div>
-                <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-[#961A1D]/5 rounded-full blur-3xl"></div>
-                
-                <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#961A1D] rounded-xl"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                    alt="Computación Avanzada" 
-                    className="w-full h-full object-cover rounded-xl shadow-xl"
-                  />
-                  <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-xl">
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="text-center">
-                        <div className="text-[#961A1D] font-bold text-xl">15+</div>
-                        <div className="text-xs text-gray-500">Años</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-[#961A1D] font-bold text-xl">25+</div>
-                        <div className="text-xs text-gray-500">Expertos</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-[#961A1D] font-bold text-xl">100%</div>
-                        <div className="text-xs text-gray-500">Innovación</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        {/* Casos de éxito */}
-        <section className="py-24 bg-gray-50">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <div className="inline-flex items-center justify-center mb-4">
-                <div className="h-px w-12 bg-[#961A1D]"></div>
-                <span className="px-4 text-sm uppercase tracking-wider text-gray-500 font-medium">Casos de Éxito</span>
-                <div className="h-px w-12 bg-[#961A1D]"></div>
-              </div>
-              
-              <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2C3336] leading-tight mb-6">
-                Proyectos <span className="text-[#961A1D]">destacados</span>
-              </h2>
-              
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Conoce algunos de nuestros proyectos más innovadores y los resultados
-                obtenidos gracias a nuestras soluciones computacionales.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Modelo BIM para Hospital de Alta Complejidad",
-                  location: "Medellín, Colombia",
-                  image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  description: "Desarrollo de un gemelo digital completo para un hospital de 50,000 m² que integra sistemas estructurales, MEP y equipamiento médico.",
-                  result: "Reducción del 35% en conflictos durante construcción y ahorros estimados del 8% en costos totales."
-                },
-                {
-                  title: "Análisis Paramétrico para Optimización Estructural",
-                  location: "Bogotá, Colombia",
-                  image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  description: "Evaluación automatizada de más de 500 configuraciones estructurales para un rascacielos de 68 pisos en zona sísmica.",
-                  result: "Optimización que permitió reducir el uso de concreto en 12% y acero en 8% sin comprometer la seguridad."
-                },
-                {
-                  title: "Plataforma de Monitoreo Estructural en Tiempo Real",
-                  location: "Ciudad de Panamá, Panamá",
-                  image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-                  description: "Sistema IoT con sensores y dashboard para monitoreo continuo de la respuesta estructural de un puente atirantado.",
-                  result: "Detección temprana de comportamientos anómalos y planificación proactiva del mantenimiento."
-                }
-              ].map((project, idx) => (
-                <div key={idx} className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                  <div className="relative h-56 overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                      <div className="p-4 text-white">
-                        <p className="text-sm">{project.location}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-[#2C3336] mb-3">{project.title}</h3>
-                    <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
-                    
-                    <div className="bg-gray-50 p-4 rounded-lg border-l-2 border-[#961A1D]">
-                      <p className="text-sm text-gray-700"><strong>Resultado:</strong> {project.result}</p>
-                    </div>
-                    
-                    <div className="mt-6 text-right">
-                      <a href="#" className="inline-flex items-center text-[#961A1D] hover:text-[#961A1D]/80 font-medium text-sm group-hover:translate-x-1 transition-transform duration-300">
-                        Ver detalles
-                        <ChevronRight className="ml-1 h-4 w-4" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <Button className="bg-[#2C3336] hover:bg-[#2C3336]/80 text-white">
-                Ver todos los proyectos
-              </Button>
-            </div>
-          </div>
-        </section>
-        
-        {/* CTA final */}
-        <section className="py-20 bg-[#2C3336] text-white overflow-hidden">
-          <div className="container mx-auto px-6">
-            <div className="relative max-w-4xl mx-auto">
-              <div className="absolute -left-20 top-1/3 w-40 h-40 rounded-full bg-[#961A1D]/10 blur-3xl"></div>
-              <div className="absolute -right-20 bottom-1/3 w-40 h-40 rounded-full bg-[#961A1D]/10 blur-3xl"></div>
-              
-              <div className="relative bg-gradient-to-r from-[#2C3336]/50 to-[#1F2426]/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl border border-white/5 p-12 text-center">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#961A1D] via-[#961A1D]/50 to-transparent"></div>
-                
-                <div className="w-20 h-20 rounded-full bg-[#961A1D]/10 flex items-center justify-center mx-auto mb-8">
-                  <Cpu className="h-10 w-10 text-[#961A1D]" />
-                </div>
-                
-                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
-                  ¿Listo para potenciar tu proyecto con tecnología avanzada?
-                </h2>
-                
-                <p className="text-white/70 mb-8 max-w-2xl mx-auto">
-                  Contáctanos hoy mismo para una demostración gratuita donde evaluaremos tus necesidades
-                  y te mostraremos cómo nuestras soluciones computacionales pueden transformar tu negocio.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
-                  <Button 
-                    className="bg-[#961A1D] hover:bg-[#961A1D] text-white px-8 py-6 text-base font-medium rounded-md transition-all duration-300 shadow-lg hover:shadow-xl group"
-                  >
-                    <span className="relative z-10 flex items-center">
-                      Agendar demostración gratuita
-                      <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1">→</span>
-                    </span>
-                    <span className="absolute inset-0 w-0 bg-black/20 group-hover:w-full transition-all duration-300"></span>
-                  </Button>
-                  
-                  <Button 
-                    className="bg-transparent border-2 border-white/20 hover:border-white/40 text-white transition-colors duration-300"
-                  >
-                    Explorar soluciones
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
+                      <div className="inline-block px-3 py-1 rounded-full text-white text-sm font-bold mb-3" style={{ backgroundColor: '#961A1D' }}>
+                         Paso {step.number}
+                       </div>
+                       
+                       <h3 className="text-xl font-bold text-[#2C3336] mb-3">{step.title}</h3>
+                       <p className="text-gray-600 mb-4">{step.description}</p>
+                       
+                       <div className="space-y-2">
+                         {step.details.map((detail, detailIdx) => (
+                           <div key={detailIdx} className="flex items-start">
+                             <CheckCircle2 className="h-4 w-4 text-[#961A1D] mr-2 flex-shrink-0 mt-0.5" />
+                             <p className="text-gray-700 text-sm">{detail}</p>
+                           </div>
+                         ))}
+                       </div>
+                     </div>
+                   </div>
+                   
+                   {/* Espacio para el lado opuesto */}
+                   <div className="hidden md:block md:w-1/2"></div>
+                 </div>
+               ))}
+             </div>
+           </div>
+         </div>
+       </section>
+       
+       {/* Tecnologías y herramientas */}
+       <section className="py-24 bg-gray-50">
+         <div className="container mx-auto px-6">
+           <div className="max-w-4xl mx-auto">
+             <div className="text-center mb-16">
+               <div className="inline-flex items-center justify-center mb-4">
+                 <div className="h-px w-12 bg-[#961A1D]"></div>
+                 <span className="px-4 text-sm uppercase tracking-wider text-gray-500 font-medium">Tecnología</span>
+                 <div className="h-px w-12 bg-[#961A1D]"></div>
+               </div>
+               
+               <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2C3336] leading-tight mb-6">
+                 Tecnologías <span className="text-[#961A1D]">avanzadas</span>
+               </h2>
+               
+               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                 Empleamos las herramientas tecnológicas más avanzadas del mercado para garantizar 
+                 resultados precisos y confiables en nuestros proyectos computacionales.
+               </p>
+               </div>
+             
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+               {[
+                 {
+                   title: "Software de Modelado BIM",
+                   description: "Utilizamos plataformas avanzadas para la creación de modelos digitales inteligentes con información completa del proyecto.",
+                   tools: ["Autodesk Revit", "Tekla Structures", "BIM 360", "Navisworks", "ArchiCAD"]
+                 },
+                 {
+                   title: "Simulación y Análisis",
+                   description: "Aplicamos herramientas especializadas para simular el comportamiento de estructuras y sistemas bajo diferentes condiciones.",
+                   tools: ["ANSYS", "ABAQUS", "SAP2000", "ETABS", "PLAXIS", "OpenSees"]
+                 },
+                 {
+                   title: "Visualización de Datos",
+                   description: "Transformamos datos complejos en visualizaciones interactivas que facilitan la toma de decisiones estratégicas.",
+                   tools: ["Power BI", "Tableau", "D3.js", "Grafana", "Kibana"]
+                 },
+                 {
+                   title: "Desarrollo a Medida",
+                   description: "Creamos soluciones personalizadas utilizando diversas tecnologías de programación y frameworks modernos.",
+                   tools: ["Python", "JavaScript", "React", "Node.js", "C#", "MATLAB"]
+                 }
+               ].map((category, idx) => (
+                 <div key={idx} className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                   <div className="h-2 bg-[#961A1D]"></div>
+                   <div className="p-8">
+                     <h3 className="text-xl font-bold text-[#2C3336] mb-3">{category.title}</h3>
+                     <p className="text-gray-600 mb-6">{category.description}</p>
+                     
+                     <div className="flex flex-wrap gap-2">
+                       {category.tools.map((tool, toolIdx) => (
+                         <span key={toolIdx} className="inline-block px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">
+                           {tool}
+                         </span>
+                       ))}
+                     </div>
+                   </div>
+                 </div>
+               ))}
+             </div>
+           </div>
+         </div>
+       </section>
+       
+       {/* Ventajas */}
+       <section className="py-24 bg-white">
+         <div className="container mx-auto px-6">
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+             <div>
+               <div className="flex items-center mb-6">
+                 <div className="h-px w-12 bg-[#961A1D] mr-4"></div>
+                 <span className="text-sm uppercase tracking-wider text-gray-500 font-medium">Ventajas</span>
+               </div>
+               
+               <h2 className="text-3xl md:text-4xl font-bold text-[#2C3336] mb-6">
+                 Por qué elegir nuestras <span className="text-[#961A1D]">soluciones</span>
+               </h2>
+               
+               <div className="space-y-6">
+                 {[
+                   {
+                     title: "Experiencia en proyectos de alta complejidad técnica",
+                     description: "Nuestro equipo ha implementado soluciones en proyectos con requerimientos tecnológicos sofisticados."
+                   },
+                   {
+                     title: "Integración con sistemas y plataformas existentes",
+                     description: "Desarrollamos soluciones que se conectan perfectamente con la infraestructura tecnológica actual."
+                   },
+                   {
+                     title: "Optimización de flujos de trabajo y procesos",
+                     description: "Automatizamos tareas repetitivas y optimizamos procesos para incrementar la productividad."
+                   },
+                   {
+                     title: "Soluciones escalables y adaptables",
+                     description: "Nuestras implementaciones evolucionan con las necesidades cambiantes de su organización."
+                   },
+                   {
+                     title: "Soporte técnico continuo y capacitación",
+                     description: "Ofrecemos acompañamiento permanente para garantizar el máximo aprovechamiento de las soluciones."
+                   }
+                 ].map((benefit, idx) => (
+                   <div key={idx} className="flex items-start">
+                     <div className="w-10 h-10 rounded-full bg-[#961A1D]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                       <CheckCircle2 className="h-5 w-5 text-[#961A1D]" />
+                     </div>
+                     <div className="ml-4">
+                       <h3 className="font-semibold text-[#2C3336] mb-1">{benefit.title}</h3>
+                       <p className="text-gray-600 text-sm">{benefit.description}</p>
+                     </div>
+                   </div>
+                 ))}
+               </div>
+               
+               <div className="mt-10">
+                 <Button className="bg-[#2C3336] hover:bg-[#961A1D] text-white transition-colors duration-500">
+                   Solicitar demostración tecnológica
+                 </Button>
+               </div>
+             </div>
+             
+             <div className="relative">
+               <div className="absolute -top-10 -right-10 w-64 h-64 bg-[#961A1D]/5 rounded-full blur-3xl"></div>
+               <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-[#961A1D]/5 rounded-full blur-3xl"></div>
+               
+               <div className="relative">
+                 <div className="absolute -top-4 -left-4 w-full h-full border-2 border-[#961A1D] rounded-xl"></div>
+                 <img 
+                   src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
+                   alt="Computación Avanzada" 
+                   className="w-full h-full object-cover rounded-xl shadow-xl"
+                 />
+                 <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-xl">
+                   <div className="grid grid-cols-3 gap-4">
+                     <div className="text-center">
+                       <div className="text-[#961A1D] font-bold text-xl">15+</div>
+                       <div className="text-xs text-gray-500">Años</div>
+                     </div>
+                     <div className="text-center">
+                       <div className="text-[#961A1D] font-bold text-xl">25+</div>
+                       <div className="text-xs text-gray-500">Expertos</div>
+                     </div>
+                     <div className="text-center">
+                       <div className="text-[#961A1D] font-bold text-xl">100%</div>
+                       <div className="text-xs text-gray-500">Innovación</div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+       
+       {/* Casos de éxito */}
+       {/* <section className="py-24 bg-gray-50">
+         <div className="container mx-auto px-6">
+           <div className="max-w-4xl mx-auto text-center mb-16">
+             <div className="inline-flex items-center justify-center mb-4">
+               <div className="h-px w-12 bg-[#961A1D]"></div>
+               <span className="px-4 text-sm uppercase tracking-wider text-gray-500 font-medium">Casos de Éxito</span>
+               <div className="h-px w-12 bg-[#961A1D]"></div>
+             </div>
+             
+             <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-[#2C3336] leading-tight mb-6">
+               Proyectos <span className="text-[#961A1D]">destacados</span>
+             </h2>
+             
+             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+               Conoce algunos de nuestros proyectos más innovadores y los resultados
+               obtenidos gracias a nuestras soluciones computacionales.
+             </p>
+           </div>
+           
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+             {[
+               {
+                 title: "Modelo BIM para Hospital de Alta Complejidad",
+                 location: "Medellín, Colombia",
+                 image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                 description: "Desarrollo de un gemelo digital completo para un hospital de 50,000 m² que integra sistemas estructurales, MEP y equipamiento médico.",
+                 result: "Reducción del 35% en conflictos durante construcción y ahorros estimados del 8% en costos totales."
+               },
+               {
+                 title: "Análisis Paramétrico para Optimización Estructural",
+                 location: "Bogotá, Colombia",
+                 image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                 description: "Evaluación automatizada de más de 500 configuraciones estructurales para un rascacielos de 68 pisos en zona sísmica.",
+                 result: "Optimización que permitió reducir el uso de concreto en 12% y acero en 8% sin comprometer la seguridad."
+               },
+               {
+                 title: "Plataforma de Monitoreo Estructural en Tiempo Real",
+                 location: "Ciudad de Panamá, Panamá",
+                 image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                 description: "Sistema IoT con sensores y dashboard para monitoreo continuo de la respuesta estructural de un puente atirantado.",
+                 result: "Detección temprana de comportamientos anómalos y planificación proactiva del mantenimiento."
+               }
+             ].map((project, idx) => (
+               <div key={idx} className="group bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                 <div className="relative h-56 overflow-hidden">
+                   <img 
+                     src={project.image} 
+                     alt={project.title} 
+                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                   />
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                     <div className="p-4 text-white">
+                       <p className="text-sm">{project.location}</p>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="p-6">
+                   <h3 className="text-xl font-bold text-[#2C3336] mb-3">{project.title}</h3>
+                   <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
+                   
+                   <div className="bg-gray-50 p-4 rounded-lg border-l-2 border-[#961A1D]">
+                     <p className="text-sm text-gray-700"><strong>Resultado:</strong> {project.result}</p>
+                   </div>
+                   
+                   <div className="mt-6 text-right">
+                     <a href="#" className="inline-flex items-center text-[#961A1D] hover:text-[#961A1D]/80 font-medium text-sm group-hover:translate-x-1 transition-transform duration-300">
+                       Ver detalles
+                       <ChevronRight className="ml-1 h-4 w-4" />
+                     </a>
+                   </div>
+                 </div>
+               </div>
+             ))}
+           </div>
+           
+           <div className="text-center mt-12">
+             <Button className="bg-[#2C3336] hover:bg-[#2C3336]/80 text-white">
+               Ver todos los proyectos
+             </Button>
+           </div>
+         </div>
+       </section> */}
+       
+       {/* CTA final */}
+       <section className="py-20 bg-[#2C3336] text-white overflow-hidden">
+         <div className="container mx-auto px-6">
+           <div className="relative max-w-4xl mx-auto">
+             <div className="absolute -left-20 top-1/3 w-40 h-40 rounded-full bg-[#961A1D]/10 blur-3xl"></div>
+             <div className="absolute -right-20 bottom-1/3 w-40 h-40 rounded-full bg-[#961A1D]/10 blur-3xl"></div>
+             
+             <div className="relative bg-gradient-to-r from-[#2C3336]/50 to-[#1F2426]/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl border border-white/5 p-12 text-center">
+               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#961A1D] via-[#961A1D]/50 to-transparent"></div>
+               
+               <div className="w-20 h-20 rounded-full bg-[#961A1D]/10 flex items-center justify-center mx-auto mb-8">
+                 <Cpu className="h-10 w-10 text-[#961A1D]" />
+               </div>
+               
+               <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
+                 ¿Listo para potenciar tu proyecto con tecnología avanzada?
+               </h2>
+               
+               <p className="text-white/70 mb-8 max-w-2xl mx-auto">
+                 Contáctanos hoy mismo para una demostración gratuita donde evaluaremos tus necesidades
+                 y te mostraremos cómo nuestras soluciones computacionales pueden transformar tu negocio.
+               </p>
+               
+               <div className="flex flex-col sm:flex-row justify-center gap-4">
+                 <Button 
+                   className="bg-[#961A1D] hover:bg-[#961A1D] text-white px-8 py-6 text-base font-medium rounded-md transition-all duration-300 shadow-lg hover:shadow-xl group"
+                 >
+                   <span className="relative z-10 flex items-center">
+                     Agendar demostración gratuita
+                     <span className="ml-2 transition-transform duration-300 transform group-hover:translate-x-1">→</span>
+                   </span>
+                   <span className="absolute inset-0 w-0 bg-black/20 group-hover:w-full transition-all duration-300"></span>
+                 </Button>
+                 
+                 <Button 
+                   className="bg-transparent border-2 border-white/20 hover:border-white/40 text-white transition-colors duration-300"
+                 >
+                   Explorar soluciones
+                 </Button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+     </main>
+     <Footer />
+   </div>
+ );
 };
 
 export default Computing;

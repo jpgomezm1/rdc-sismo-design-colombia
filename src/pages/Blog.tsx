@@ -80,7 +80,7 @@ const Blog = () => {
       author: 'Ing. Carlos Ramírez',
       category: 'innovacion',
       readTime: '8 min',
-      image: 'https://images.unsplash.com/photo-1581094283645-9123f341d3d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/blog1.png',
       featured: true
     },
     {
@@ -91,7 +91,7 @@ const Blog = () => {
       author: 'Dra. Alejandra Méndez',
       category: 'geociencias',
       readTime: '12 min',
-      image: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/blog2.png',
       featured: false
     },
     {
@@ -102,7 +102,7 @@ const Blog = () => {
       author: 'Ing. Javier Torres',
       category: 'normativa',
       readTime: '10 min',
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/blog3.png',
       featured: false
     },
     {
@@ -113,7 +113,7 @@ const Blog = () => {
       author: 'Ing. María Sánchez',
       category: 'computacion',
       readTime: '7 min',
-      image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/blog4.png',
       featured: false
     },
     {
@@ -124,7 +124,7 @@ const Blog = () => {
       author: 'Ing. Roberto Pérez',
       category: 'estructural',
       readTime: '15 min',
-      image: 'https://images.unsplash.com/photo-1572806030463-ee6d45312ead?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/blog5.png',
       featured: true
     },
     {
@@ -135,7 +135,7 @@ const Blog = () => {
       author: 'Dra. Alejandra Méndez',
       category: 'geociencias',
       readTime: '9 min',
-      image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/blog6.png',
       featured: false
     },
     {
@@ -146,7 +146,7 @@ const Blog = () => {
       author: 'Ing. Carlos Ramírez',
       category: 'estructural',
       readTime: '11 min',
-      image: 'https://images.unsplash.com/photo-1499397228652-1244787638d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/blog7.png',
       featured: false
     },
     {
@@ -157,7 +157,7 @@ const Blog = () => {
       author: 'Ing. Javier Torres',
       category: 'computacion',
       readTime: '14 min',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://storage.googleapis.com/cluvi/Web-Risk/Blog-Images/blog8.png',
       featured: false
     }
   ];

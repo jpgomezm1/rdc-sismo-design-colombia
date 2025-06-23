@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Users, Building, Award, LineChart, GraduationCap, Timer, BarChart3, ShieldCheck } from 'lucide-react';
+import { Users, Building, Award, LineChart, GraduationCap, Timer, BarChart3, ShieldCheck, Globe } from 'lucide-react';
 
 const CredentialsSection = () => {
   const [counters, setCounters] = useState({
     years: 0,
-    projects: 0,
-    countries: 0,
-    satisfaction: 0
+    experts: 0,
+    projectsCO: 0,
+    projectsPA: 0,
   });
   
   const [isInView, setIsInView] = useState(false);
@@ -15,12 +15,12 @@ const CredentialsSection = () => {
   const sectionRef = useRef(null);
   const [activeTab, setActiveTab] = useState('experience');
 
-  // Valores finales para los contadores
+  // Valores finales para los contadores (actualizados según PDF)
   const targets = {
-    years: 25,
-    projects: 500,
-    countries: 2,
-    satisfaction: 98
+    years: 11,
+    experts: 30,
+    projectsCO: 60,
+    projectsPA: 10,
   };
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const CredentialsSection = () => {
             Object.keys(targets).forEach((key) => {
               const target = targets[key];
               let current = 0;
-              const increment = target / 40; // Más rápido que antes
+              const increment = target / 40; 
               
               const timer = setInterval(() => {
                 current += increment;
@@ -61,41 +61,45 @@ const CredentialsSection = () => {
       observer.observe(sectionRef.current);
     }
 
-    return () => observer.disconnect();
+    return () => {
+      if (sectionRef.current) {
+        observer.disconnect();
+      }
+    };
   }, [hasAnimated]);
 
-  // Datos para las pestañas
+  // Datos para las pestañas (actualizados)
   const tabData = {
     experience: {
       title: "Experiencia Comprobada",
-      description: "Más de dos décadas de excelencia en ingeniería sísmica y estructural nos posicionan como líderes en la región.",
+      description: "Más de una década de excelencia en ingeniería sísmica y estructural nos posicionan como líderes en la región.",
       metrics: [
         { 
           icon: Timer, 
           value: counters.years, 
           suffix: "+", 
-          label: "Años de Experiencia",
+          label: "Años de operaciones",
           color: "#961A1D"
         },
         { 
-          icon: Building, 
-          value: counters.projects, 
+          icon: Users, 
+          value: counters.experts, 
           suffix: "+", 
-          label: "Proyectos Completados",
+          label: "Profesionales expertos",
           color: "#2C3336"
         },
         { 
-          icon: Users, 
-          value: counters.satisfaction, 
-          suffix: "%", 
-          label: "Satisfacción del Cliente",
+          icon: Building, 
+          value: counters.projectsCO, 
+          suffix: "+", 
+          label: "Proyectos en Colombia",
           color: "#1F4E5F"
         },
         { 
-          icon: LineChart, 
-          value: "3M+", 
-          suffix: "", 
-          label: "m² Diseñados",
+          icon: Globe, 
+          value: counters.projectsPA, 
+          suffix: "+", 
+          label: "Proyectos en Panamá",
           color: "#961A1D"
         }
       ]
@@ -313,7 +317,7 @@ const CredentialsSection = () => {
                 Nuestra Historia
               </h3>
               <p className="text-white/70 max-w-xl">
-                Desde 1998, hemos evolucionado de un estudio de ingeniería local a una firma de consultoría internacional, manteniendo siempre la excelencia técnica y la innovación como pilares fundamentales.
+                Desde 2014, hemos evolucionado de un estudio de ingeniería local a una firma de consultoría internacional, manteniendo siempre la excelencia técnica y la innovación como pilares fundamentales.
               </p>
             </div>
             
@@ -321,7 +325,7 @@ const CredentialsSection = () => {
               <div className="flex flex-col items-center">
                 <div className="h-16 w-px bg-gradient-to-b from-[#961A1D] to-white/30"></div>
                 <div className="p-4 rounded-full bg-[#961A1D] text-white font-bold">
-                  1998
+                  2014
                 </div>
                 <div className="mt-2 text-white/70 text-sm">Fundación</div>
               </div>
@@ -329,7 +333,7 @@ const CredentialsSection = () => {
               <div className="flex flex-col items-center">
                 <div className="h-16 w-px bg-gradient-to-b from-[#1F4E5F] to-white/30"></div>
                 <div className="p-4 rounded-full bg-[#1F4E5F] text-white font-bold">
-                  2010
+                  2019
                 </div>
                 <div className="mt-2 text-white/70 text-sm">Expansión</div>
               </div>

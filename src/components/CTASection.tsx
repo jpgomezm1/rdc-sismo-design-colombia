@@ -84,7 +84,7 @@ const CTASection = () => {
             <motion.div variants={itemVariants} className="inline-block mb-6">
               <div className="flex items-center">
                 <div className="h-px w-8 bg-[#961A1D] mr-3"></div>
-                <span className="text-sm uppercase tracking-wider text-white/70 font-medium">Consultoría Especializada</span>
+                <span className="text-sm uppercase tracking-wider text-white/70 font-medium">CONSULTORÍA ESPECIALIZADA</span>
               </div>
             </motion.div>
             
@@ -92,24 +92,65 @@ const CTASection = () => {
               variants={itemVariants}
               className="text-4xl md:text-5xl font-montserrat font-bold text-white leading-tight mb-6"
             >
-              Proteja su inversión con ingeniería
-              <span className="text-[#961A1D] block mt-2">estructural de precisión</span>
+              Protege tu inversión con una
+              <span className="text-[#961A1D] block mt-2">ingeniería que entiende tus retos</span>
             </motion.h2>
             
             <motion.p 
               variants={itemVariants}
               className="text-lg text-white/80 mb-8 leading-relaxed"
             >
-              Nuestro equipo de especialistas evaluará su proyecto con los más altos estándares técnicos, 
-              garantizando soluciones que optimizan la seguridad y eficiencia de sus estructuras 
-              en Colombia y Panamá.
+              Evaluamos tu proyecto con visión técnica, herramientas propias y datos precisos para entregarte soluciones estructurales que reducen incertidumbre y aumentan la rentabilidad.
             </motion.p>
+            
+            {/* Beneficios destacados */}
+            <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/10">
+                <div className="flex items-center mb-2">
+                  <div className="w-8 h-8 rounded-full bg-[#961A1D]/20 flex items-center justify-center mr-3">
+                    <span className="text-[#961A1D] text-sm">🔍</span>
+                  </div>
+                  <span className="text-white text-sm font-medium">Flujo de caja adaptado</span>
+                </div>
+                <p className="text-white/60 text-xs">Nos acomodamos al flujo de caja de los desarrolladores inmobiliarios</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/10">
+                <div className="flex items-center mb-2">
+                  <div className="w-8 h-8 rounded-full bg-[#961A1D]/20 flex items-center justify-center mr-3">
+                    <span className="text-[#961A1D] text-sm">🎯</span>
+                  </div>
+                  <span className="text-white text-sm font-medium">Desde pre-dimensionamiento</span>
+                </div>
+                <p className="text-white/60 text-xs">Nos incorporamos al equipo de arquitectura desde el pre-dimensionamiento</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/10">
+                <div className="flex items-center mb-2">
+                  <div className="w-8 h-8 rounded-full bg-[#961A1D]/20 flex items-center justify-center mr-3">
+                    <span className="text-[#961A1D] text-sm">🧠</span>
+                  </div>
+                  <span className="text-white text-sm font-medium">60+ proyectos en altura</span>
+                </div>
+                <p className="text-white/60 text-xs">Más de 60 proyectos en altura diseñados en Colombia y Panamá</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-white/10">
+                <div className="flex items-center mb-2">
+                  <div className="w-8 h-8 rounded-full bg-[#961A1D]/20 flex items-center justify-center mr-3">
+                    <span className="text-[#961A1D] text-sm">🛠</span>
+                  </div>
+                  <span className="text-white text-sm font-medium">Tecnología propia</span>
+                </div>
+                <p className="text-white/60 text-xs">Tecnología propia para evaluar escenarios estructurales y de refuerzo</p>
+              </div>
+            </motion.div>
             
             <motion.div variants={itemVariants} className="space-y-4 mb-10">
               {[
-                { icon: Clock, text: "Respuesta inicial en 24 horas" },
-                { icon: CheckCircle, text: "Primera consultoría sin costo" },
-                { icon: Award, text: "Equipo con 25+ años de experiencia" }
+                { icon: Clock, text: "Nos acomodamos al flujo de caja de los desarrolladores." },
+                { icon: CheckCircle, text: "Nos incorporamos desde el pre-dimensionamiento." },
+                { icon: Award, text: "Tecnología propia para evaluar múltiples escenarios." }
               ].map((item, index) => (
                 <div key={index} className="flex items-start">
                   <div className="flex-shrink-0 mt-1 p-1 rounded-full bg-[#961A1D]/20">
@@ -134,7 +175,7 @@ const CTASection = () => {
                   className="relative z-10 bg-[#961A1D] hover:bg-[#961A1D] text-white px-8 py-6 text-base font-medium rounded-md transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   <span className="flex items-center relative z-10">
-                    Agendar Consultoría Gratuita
+                    Evalúa tu proyecto
                     <ChevronRight className="ml-2 h-5 w-5 transition-transform duration-300 transform group-hover:translate-x-1" />
                   </span>
                 </Button>
@@ -179,16 +220,16 @@ const CTASection = () => {
               <div className="space-y-6">
                 {[
                   {
-                    title: "Expertise Técnico Superior",
-                    description: "Combinamos décadas de experiencia con las últimas metodologías de análisis estructural."
+                    title: "Experiencia + Tecnología Propia",
+                    description: "Más de una década resolviendo proyectos complejos con herramientas como StructuBIM y ProDet, desarrolladas internamente."
                   },
                   {
-                    title: "Enfoque Personalizado",
-                    description: "Cada proyecto recibe un análisis detallado según sus características específicas y contexto."
+                    title: "Enfoque Personalizado con Rigurosidad Técnica",
+                    description: "Cada edificio tiene un contexto único: nuestro análisis se adapta a tus condiciones técnicas, comerciales y de ejecución."
                   },
                   {
-                    title: "Cumplimiento Normativo",
-                    description: "Garantizamos el 100% de conformidad con NSR-10 y estándares internacionales."
+                    title: "Cumplimiento Normativo y Diseño por Desempeño",
+                    description: "Cumplimos al 100% la NSR-10 y adoptamos metodologías internacionales como LATBSDC para edificios de gran altura."
                   }
                 ].map((item, index) => (
                   <div key={index} className="pb-6 border-b border-white/10 last:border-0 last:pb-0">
@@ -201,7 +242,7 @@ const CTASection = () => {
               <div className="mt-8 bg-white/10 rounded-lg p-4">
                 <div className="flex items-center text-white mb-1">
                   <CheckCircle className="h-4 w-4 text-[#961A1D] mr-2" />
-                  <span className="font-medium">Más de 500 proyectos exitosos</span>
+                  <span className="font-medium">Más de 70 proyectos exitosos</span>
                 </div>
                 <p className="text-white/70 text-sm">
                   En edificaciones de todos los tamaños y complejidades en Colombia y Panamá.

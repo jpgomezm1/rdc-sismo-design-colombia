@@ -97,7 +97,7 @@ const HeroSection = () => {
                 className="block transform transition-transform duration-1000 delay-300"
                 style={{transform: isLoaded ? 'translateY(0)' : 'translateY(100%)'}}
               >
-                Ingeniería Sísmica
+                Ingeniería estructural que
               </span>
             </div>
             <div className="overflow-hidden">
@@ -105,7 +105,7 @@ const HeroSection = () => {
                 className="block transform transition-transform duration-1000 delay-400"
                 style={{transform: isLoaded ? 'translateY(0)' : 'translateY(100%)'}}
               >
-                <span className="text-[#961A1D]">Innovadora</span> y Precisa
+                protege <span className="text-[#961A1D]">vidas y rentabilidad</span>
               </span>
             </div>
           </h1>
@@ -120,8 +120,7 @@ const HeroSection = () => {
               className="text-base text-white/70 leading-relaxed transform transition-transform duration-1000 delay-600"
               style={{transform: isLoaded ? 'translateY(0)' : 'translateY(50%)'}}
             >
-              25 años protegiendo vidas y patrimonio con soluciones estructurales de
-              vanguardia en Colombia y Panamá.
+              Tranquilidad estructural y financiera para tu proyecto.  Ingeniería estructural y geotécnica de vanguardia basada en innovación, con herramientas propias que reducen incertidumbre, optimizan costos y aceleran decisiones. 
             </p>
           </div>
           
@@ -135,7 +134,7 @@ const HeroSection = () => {
               className="group bg-[#961A1D] hover:bg-[#961A1D] text-white px-8 py-6 text-sm font-medium rounded-none transition-all duration-300 overflow-hidden relative"
             >
               <span className="relative z-10 flex items-center group-hover:translate-x-1 transition-transform">
-                Evalúa tu Proyecto
+                Evalúa tu proyecto
                 <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
               </span>
               <span className="absolute inset-0 w-0 bg-black/20 group-hover:w-full transition-all duration-300"></span>
@@ -146,7 +145,7 @@ const HeroSection = () => {
               variant="outline"
               className="border-2 border-white/30 text-white bg-black/20 hover:bg-white/10 px-8 py-6 text-sm font-medium rounded-none transition-all duration-300"
             >
-              Ver Portafolio
+              Explora nuestro portafolio
             </Button>
           </div>
         </div>
